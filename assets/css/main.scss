@@ -1,0 +1,210 @@
+---
+---
+@import 'normalize';
+@import 'color';
+@import 'font';
+@import 'base';
+@import 'hightlight';
+
+.kz-main-container {
+  width: 45rem;
+  margin: 10px auto;
+  height: 100%;
+}
+
+.kz-navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+
+  }
+
+  &__menu {
+    // justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  &__item {
+    color: $black-color;
+    font-family: $secondary-font;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    position: relative;
+    text-decoration: none;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $pink-color;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+  
+    &:hover {
+      &::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.kz-blog-list {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.kz-blog-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__date {
+    color: $grey-color;
+    justify-content: flex-end;
+    margin-left: auto;
+    text-align: end;
+    width: 140px;
+  }
+}
+
+.kz-blog {
+  &__title {
+    color: $yellow-color;
+  }
+
+  &__subtitle {
+    color: $grey-color;
+  }
+}
+
+.kz-pagination {
+  &__button {
+    
+  }
+}
+
+.kz-footer {
+  height: 200px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .kz-main-container {
+    width: 300px;
+    // margin: auto;
+  }
+}
+
+// .is-horizontal-center {
+//   margin: auto;
+// }
+
+// .card {
+//   margin-top: 0.8em;
+//   margin-bottom: 0.8em;
+// }
+
+// .footer {
+//   height: 200px;
+//   padding: 1.5em;
+// }
+
+// .has-margin-1 {
+//   margin: 5px;
+// }
+
+// .has-margin-2 {
+//   margin: 10px;
+// }
+
+// .has-margin-3 {
+//   margin: 15px;
+// }
+
+// .is-on {
+//   box-shadow: inset 0 -6px 0 $pink-color;
+// }
+
+// .is-blog-subtitle {
+//   margin-top: 1em;
+//   margin-bottom: 1em;
+// }
+
+// .has-text-blue {
+//   color: $blue-color !important;
+// }
+
+// a {
+//   color: $grey-color;
+//   text-decoration: none;
+//   &:hover, &:active, &:visited {
+//     color: $grey-color;
+//   }
+// }
+
+// a.navbar-item, .navbar-link {
+//   color: $blue-color;
+//   text-decoration: none;
+//   &:hover, &:active, &:visited {
+//     color: $blue-color;
+//   }
+// }
+
+// .title {
+//   color: #5c5c5c;
+// }
+
+// .subtitle {
+//   font-family: $family-secondary;
+//   color: $green-color;
+// }
+
+// .subtitle + .subtitle {
+//   margin-top: -1.25rem;
+// }
+
+// .tag:not(body).is-info.is-light {
+//   color: $purple-color;
+//   background-color: $light-purple-color;
+// }
+
+// .is-blog-info {
+//   color: $grey-color;
+// }
+
+// .is-blog-header {
+//   margin-bottom: 1.25em !important;
+// }
+
+.kz-progress {
+  background: linear-gradient(to right, $orange-color var(--scroll), transparent 0);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+}
+
+// .page-nav {
+//   margin: 20px 0;
+//   justify-content: space-between;
+//   display: flex;
+// }

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
+@font-face {
+  font-family: "FC Home";
+  src: url("/assets/fonts/FC-Home-Regular.ttf") format("ttf"),
+    url("/assets/fonts/FC-Home-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Bai Jamjuree";
+  src: url("/assets/fonts/Bai-Jamjuree-Regular.ttf") format("ttf"),
+    url("/assets/fonts/Bai-Jamjuree-Regular.woff2") format("woff2");
+}
+
+$primary-font: "Bai Jamjuree", "FC Home", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$secondary-font: "FC Home";
+$monospace-font: "Fira Mono", monospace;
