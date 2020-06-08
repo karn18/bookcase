@@ -5,22 +5,16 @@
     <div class="progress"></div>
     <div class="kz-main-container">
       {%- include navbar.html -%}
-      <!-- <div class="kz-blog-list"> -->
-        {%- if paginator.posts.size > 0 -%}
-          <ul class="kz-blog-list">
-            {%- for post in paginator.posts -%}
-              <li class="kz-blog-item">
-                <!-- <div class="kz-blog-item"> -->
-                  <a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a>
-                  <div class="kz-blog-item__date">{{ post.date | date: "%d-%m-%Y" }}</div>
-                <!-- </div> -->
-              </li>
-            {%- endfor -%}
-          </ul>
+      <div class="kz-content">
+        {% if paginator.posts.size > 0 %}
+          {% for post in paginator.posts %}
+            <ul class="kz-blog-item">
+              <li><a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a></li>
+            </ul>
+          {% endfor %}
         {%- endif -%}
-        
         {%- include page_nav.html -%}
-      <!-- </div> -->
+      </div>
     </div>
     <!-- {%- include footer.html -%} -->
     <!-- {%- include progress.html -%} -->
