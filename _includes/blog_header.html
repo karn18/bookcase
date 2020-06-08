@@ -1,4 +1,16 @@
-<h1 class="title has-text-blue is-blog-header"><strong class="shadow is-orange">{{ include.blog.title | escape }}</strong></h1>
+<div class="kz-blog__header">
+  <h1 class="kz-blog__title">{{ include.blog.title | escape }}</h1>
+  <div class="kz-blog__info">
+    <i class="far fa-calendar-alt"></i> {{ include.blog.date | date: "%d-%m-%Y" }}
+    {% if include.blog.tags.size > 0 %}
+      | <i class="fas fa-tag"></i>
+      {% for tag in include.blog.tags %}
+        <span class="tag is-info is-light">{{ tag }}</span>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+<!-- <h1 class="title has-text-blue is-blog-header"><strong class="shadow is-orange">{{ include.blog.title | escape }}</strong></h1>
 <h6 class="subtitle is-6 is-blog-info">
   <span class="icon is-small">
     <i class="far fa-calendar-alt"></i>
@@ -18,4 +30,4 @@
   {% for tag in include.blog.tags %}
     <span class="tag is-info is-light">{{ tag }}</span>
   {% endfor %}
-</h6>
+</h6> -->

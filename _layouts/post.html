@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
-{% include blog_header.html blog=page %}
-<figure class="image blog-image-header">
-  <img src="{{ page.thumbnail }}">
-</figure>
-<div class="blog-content is-family-secondary">
-  {{ content }}
+<div class="kz-blog">
+  {% include blog_header.html blog=page %}
+  <figure class="image blog-image-header">
+    <img src="{{ page.thumbnail }}">
+  </figure>
+  <div class="blog-content is-family-secondary">
+    {{ content }}
+  </div>
+  <!-- {% include share_buttons.html %} -->
+  <!-- {% include comments.html %} -->
+  {% include blog_nav.html %}
+  {% include related-blog.html %}
 </div>
-<!-- {% include share_buttons.html %} -->
-<!-- {% include comments.html %} -->
-{% include blog_nav.html %}
-{% include related-blog.html %}
+
+

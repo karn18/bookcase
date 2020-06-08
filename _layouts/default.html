@@ -2,14 +2,13 @@
 <html lang="en">
   {%- include head.html -%}
   <body>
-    <div class="progress"></div>
+    <div class="kz-progress"></div>
     <div class="kz-main-container">
       {%- include navbar.html -%}
       <div class="kz-content">
-        <div class="kz-blog">
-          {{ content }}
-        </div>
+        {{ content }}
       </div>
     </div>
+    {%- include progress.html -%}
   </body>
 </html>

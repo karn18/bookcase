@@ -4,6 +4,7 @@ body {
   display: flex;
   font-family: $primary-font;
   font-size: 14px;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5 {
@@ -14,10 +15,11 @@ h1, h2, h3, h4, h5 {
 a {
   color: $black-color;
   font-family: $secondary-font;
-  font-size: 1.1rem;
-  font-weight: bold;
   position: relative;
   text-decoration: none;
+  &:hover {
+    color: $yellow-color;
+  }
 }
 
 ul {
@@ -26,4 +28,48 @@ ul {
 
 li {
   margin-left: 1rem;
+}
+
+figure, img {
+  max-width: 100%;
+  margin: 0;
+}
+
+hr {
+  background-color:$grey-color;
+  border-width: 0;
+  color: $grey-color;
+  height: 2px;
+  margin: 30px auto;
+  width: 60%;  
+}
+
+blockquote {
+  border-left: 4px solid $green-color;
+  padding: 0 15px !important;
+  margin: 50px auto;
+  width: 75%;
+}
+
+strong {
+  font-weight: bold;
+  color: $yellow-color;
+}
+
+p {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin: 20px 0;
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  img + em {
+    color: $orange-color;
+    display: block;
+    text-align: center;
+    margin-top: 0.4em;
+  }
 }

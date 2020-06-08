@@ -6,20 +6,21 @@
     <div class="kz-main-container">
       {%- include navbar.html -%}
       <div class="kz-content">
-        {% for post in site.posts %}
-          <ul>
+        <ul class="kz-blog-list"></ul>
+          {% for post in site.posts %}
             {% assign current_year = post.date | date: "%Y" %}
             {% if current_year != year %}
-              <h2 id="y{{current_year}}">{{ current_year }}</h2>
+              <hr />
+              <h2 id="year_{{current_year}}">{{ current_year }}</h2>
               {% assign year = current_year %}
             {% endif %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-          </ul>
-        {% endfor %}
+            <li><a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
         {%- include page_nav.html -%}
       </div>
     </div>
     <!-- {%- include footer.html -%} -->
-    <!-- {%- include progress.html -%} -->
+    {%- include progress.html -%}
   </body>
 </html>

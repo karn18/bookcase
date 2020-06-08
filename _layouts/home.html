@@ -2,21 +2,21 @@
 <html lang="en">
   {%- include head.html -%}
   <body>
-    <div class="progress"></div>
+    <div class="kz-progress"></div>
     <div class="kz-main-container">
       {%- include navbar.html -%}
       <div class="kz-content">
         {% if paginator.posts.size > 0 %}
-          {% for post in paginator.posts %}
-            <ul class="kz-blog-item">
+          <ul class="kz-blog-list">
+            {% for post in paginator.posts %}
               <li><a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a></li>
-            </ul>
-          {% endfor %}
+            {% endfor %}
+          </ul>
         {%- endif -%}
         {%- include page_nav.html -%}
       </div>
     </div>
     <!-- {%- include footer.html -%} -->
-    <!-- {%- include progress.html -%} -->
+    {%- include progress.html -%}
   </body>
 </html>
