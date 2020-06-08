@@ -15,8 +15,9 @@ $base0D: #6699cc;
 $base0E: #cc99cc;
 $base0F: #d27b53;
 
-.highlight {
- 
+.highlight code {
+  font-family: $monospace-font;
+  font-size: 13px;
 }
 
 .highlight .lineno {
