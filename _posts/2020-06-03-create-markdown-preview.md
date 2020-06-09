@@ -14,7 +14,6 @@ image:
   height: 100
   width: 100
 date: 2020-06-03 22:30 +0700
-comments: true
 ---
 ลองมาเพิ่มฟีเจอร์ **Markdown Preview** ให้กับโปรแกรม **Splendid Team** ดู โดยใช้ **Stimulus** เป็นต้วจัดการเหตุการณ์ และ UI
 <!--more-->

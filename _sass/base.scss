@@ -72,4 +72,9 @@ p {
     text-align: center;
     margin-top: 0.4em;
   }
+
+  code {
+    font-family: $monospace-font;
+    font-size: 13px;
+  }
 }
