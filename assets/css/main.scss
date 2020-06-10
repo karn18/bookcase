@@ -3,6 +3,7 @@
 @import 'normalize';
 @import 'color';
 @import 'font';
+@import 'typicons';
 @import 'base';
 @import 'hightlight';
 
@@ -136,6 +137,16 @@
   .kz-main-container {
     width: 300px;
     // margin: auto;
+  }
+
+  .kz-navbar {
+    &__item {
+      padding-left: 1rem;
+
+      span {
+        display: none;
+      }
+    }
   }
 }
 

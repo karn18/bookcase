@@ -3,9 +3,11 @@ layout: default
 ---
 <div class="kz-blog">
   {% include blog_header.html blog=page %}
-  <figure class="image blog-image-header">
-    <img src="{{ page.thumbnail }}">
-  </figure>
+  {% if page.thumbnail %}
+    <figure class="image blog-image-header">
+      <img src="{{ page.thumbnail }}">
+    </figure>
+  {% endif %}
   <div class="blog-content is-family-secondary">
     {{ content }}
   </div>
