@@ -1,26 +1,26 @@
 <!doctype html>
 <html lang="en">
   {%- include head.html -%}
-  <body>
+  <body data-theme="light">
     <div class="kz-progress"></div>
     <div class="kz-main-container">
       {%- include navbar.html -%}
-      <h2>Dev</h2>
-      <ul class="kz-blog-list">
-        {% for post in site.categories.dev limit: 6 %}
-          <li><a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
+      {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
 
-      <hr />
-      <!-- Favorite of the Day -->
-      <h2>FOD</h2>
-      <ul class="kz-blog-list">
-        {% for post in site.categories.fod limit: 6 %}
-          <li><a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-
+        <h2>{{ category_name | capitalize }}</h2>
+        <!-- <a name="{{ category_name | slugize }}"></a> -->
+        <ul class="kz-blog-list">
+          {% for post in site.categories[category_name] limit: 6 %}
+            <li class="kz-blog-item">
+              <a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a>
+              <div class="kz-blog-item__info">
+                <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
     </div>
     <!-- {%- include footer.html -%} -->
     {%- include progress.html -%}
