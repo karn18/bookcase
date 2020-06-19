@@ -13,6 +13,9 @@
 
   a {
     color: $white-color;
+    &:hover {
+      color: $yellow-color;
+    }
   }
 
   hr {
