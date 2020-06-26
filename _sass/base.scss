@@ -16,7 +16,8 @@ a {
   color: $black-color;
   font-family: $secondary-font;
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: $orange-color;  
   &:hover {
     color: $yellow-color;
   }
@@ -79,4 +80,11 @@ p {
     font-family: $monospace-font;
     font-size: 13px;
   }
+}
+
+code {
+  color: $green-color;
+  font-family: $monospace-font;
+  font-size: 13px;
+  font-style: italic;
 }
