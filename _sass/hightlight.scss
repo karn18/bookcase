@@ -15,13 +15,6 @@ $base0D: #6699cc;
 $base0E: #cc99cc;
 $base0F: #d27b53;
 
-code {
-  font-family: $monospace-font;
-  font-size: 13px;
-  text-decoration-line: underline;
-  text-decoration-color: $orange-color;
-}
-
 .highlight code {
   text-decoration-line: none;
 }

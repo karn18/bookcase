@@ -26,6 +26,7 @@
   .kz-navbar {
     &__logo {
       color: $yellow-color;
+      text-decoration: none;
     }
     &__item {
       color: $white-color;
@@ -75,6 +76,7 @@
 
   &__logo {
     color: $yellow-color;
+    text-decoration: none;
     font-family: $secondary-font;
     font-weight: bold;
   }

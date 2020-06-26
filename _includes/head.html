@@ -10,7 +10,7 @@
   <script src="{{ '/assets/javascripts/main.js' | relative_url }}"></script>
   {%- feed_meta -%}
   <meta name="robots" content="index,follow" />
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- if jekyll.environment == 'production' -%}
     {%- include analytics.html -%}
   {%- endif -%}
   <title>{{ page.title }}</title>
