@@ -7,6 +7,11 @@ tags:
 - ruby
 - hashids
 categories: dev
+cover: "/assets/images/posts/2020/เปลี่ยน-id-ให้เป็น-hash-id-บน-url/cover.jpg"
+image:
+  path: "/assets/images/posts/2020/เปลี่ยน-id-ให้เป็น-hash-id-บน-url/cover.jpg"
+  height: 100
+  width: 100
 date: 2020-06-09 23:04 +0700
 ---
 ปกติเมื่อเราใช้ **rails generator** ในการสร้าง **CRUD** ไม่ว่าจะเป็น `scaffold` หรือ `scaffold_controller` จะพบว่า **resources** ที่ได้จะมีลักษณะคล้ายกับรูปด้านล่าง

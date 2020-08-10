@@ -6,6 +6,11 @@ tags:
 - rails
 - preact
 categories: dev
+cover: '/assets/images/posts/2020/guide-to-rails-and-preact-part-1/cover.jpg'
+image:
+  path: '/assets/images/posts/2020/guide-to-rails-and-preact-part-1/cover.jpg'
+  height: 100
+  width: 100
 date: 2020-06-19 22:36 +0700
 ---
 💡บทความนี้จะแนะนำไลบราลีที่ชื่อ **Preact** ซึ่งถือเป็นไลบราลี **JavaScript** ขนาดเล็กและทันสมัยให้กับ **Frontend Developer** ได้รู้จักกัน โดยในบทความจะแนะนำวิธีการติดตั้ง **Preact** บน **Rails**<!--more-->
@@ -14,7 +19,7 @@ date: 2020-06-19 22:36 +0700
 - สร้างโปรเจคใหม่
 
 ```bash
-$ rails new myblog --wepacker -d postgresql
+$ rails new book_store --wepacker -d postgresql
 ```
 
 - ติดตั้ง **Preact** และปลักอินสำหรับ **compile**
@@ -35,17 +40,17 @@ plugins: [
 ]
 ```
 
-- สร้าง **controller** ชื่อ `Home` และ **action** ชื่อ `index`
+- สร้าง **controller** ชื่อ `Pages` และ **action** ชื่อ `index`
 
 ```bash
-$ rails generate controller Home index
+$ rails generate controller Pages index
 ```
 
 - กำหนด **routes** ในการเข้าถึงใน `config/routes.rb`
 
 ```ruby
 Rails.application.routes.draw do
-  root to: 'home#index'
+  root to: 'pages#index'
 end
 ```
 
@@ -103,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 - รัน **server** และเข้าไปยัง `http://localhost:3000`
 
-![preact](/assets/images/posts/2020/guide-to-rails-and-preact/preact.png)
+![preact](/assets/images/posts/2020/guide-to-rails-and-preact-part-1/preact.png)
 *ทดสอบการทำงาน Preact*
 
 สำหรับในบทความนี้ก็จะแนะนำการติดตั้งไว้เพียงเท่านี้ สำหรับในบทความหน้า เราจะมาลงลึกในการใช้งาน **Preact** กัน 🤩

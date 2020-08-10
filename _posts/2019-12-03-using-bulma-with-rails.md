@@ -7,7 +7,7 @@ tags:
   - rails
   - bulma
 categories: dev
-thumbnail: '/assets/images/posts/2019/using-bulma-with-rails/thumbnail.png'
+cover: '/assets/images/posts/2019/using-bulma-with-rails/thumbnail.png'
 image:
   path: '/assets/images/posts/2019/using-bulma-with-rails/thumbnail.png'
   height: 100

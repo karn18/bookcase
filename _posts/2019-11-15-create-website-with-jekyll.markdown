@@ -9,9 +9,9 @@ tags:
   - jekyll
   - ruby
 categories: dev
-thumbnail: '/assets/images/posts/2019/create-website-with-jekyll/thumbnail.png'
+cover: '/assets/images/posts/2019/create-website-with-jekyll/cover.png'
 image:
-  path: '/assets/images/posts/2019/create-website-with-jekyll/thumbnail.png'
+  path: '/assets/images/posts/2019/create-website-with-jekyll/cover.png'
   height: 100
   width: 100
 ---

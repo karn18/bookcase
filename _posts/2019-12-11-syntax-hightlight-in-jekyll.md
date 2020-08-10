@@ -7,7 +7,7 @@ tags:
   - ruby
   - jekyll
 categories: dev
-thumbnail: '/assets/images/posts/2019/syntax-hightlight-in-jekyll/thumbnail.png'
+cover: '/assets/images/posts/2019/syntax-hightlight-in-jekyll/thumbnail.png'
 image:
   path: '/assets/images/posts/2019/syntax-hightlight-in-jekyll/thumbnail.png'
   height: 100
