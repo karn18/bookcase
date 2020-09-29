@@ -8,9 +8,9 @@ tags:
   - python
   - thai nlp
 categories: dev
-cover: '/assets/images/posts/2019/customize-reading-time-with-thai-nlp/thumbnail.png'
+cover: '/assets/images/posts/2019/customize-reading-time-with-thai-nlp/cover.png'
 image:
-  path: '/assets/images/posts/2019/customize-reading-time-with-thai-nlp/thumbnail.png'
+  path: '/assets/images/posts/2019/customize-reading-time-with-thai-nlp/cover.png'
   height: 100
   width: 100
 ---

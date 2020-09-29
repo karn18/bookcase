@@ -8,30 +8,30 @@
 @import 'hightlight';
 
 [data-theme="dark"] {
-  background-color: $black-color;
-  color: $white-color;
+  background-color: var(--black-color);
+  color: var(--white-color);
 
   a {
-    color: $white-color;
+    color: var(--white-color);
     &:hover {
-      color: $yellow-color;
+      color: var(--yellow-color);
     }
   }
 
   hr {
-    background-color:$white-color;
-    color: $white-color;
+    background-color: var(--white-color);
+    color: var(--white-color);
   }
 
   .kz-navbar {
     &__logo {
-      color: $yellow-color;
+      color: var(--white-color);
       text-decoration: none;
     }
     &__item {
-      color: $white-color;
+      color: var(--white-color);
       &:hover {
-        color: $white-color;
+        color: var(--white-color);
       }
     }
   }
@@ -48,7 +48,7 @@
   }
 
   &__subtitle {
-    color: $grey-color;
+    color: var(--white-color);
     font-family: $primary-font;
     font-size: 0.75rem;
     margin-top: -0.2rem;
@@ -56,7 +56,7 @@
 
   &__follow {
     a {
-      color: $grey-color;
+      color: var(--grey-color);
       font-family: $primary-font;
     }
   }
@@ -75,7 +75,7 @@
   align-items: center;
 
   &__logo {
-    color: $yellow-color;
+    color: var(--black-color);
     text-decoration: none;
     font-family: $secondary-font;
     font-weight: bold;
@@ -86,7 +86,7 @@
   }
 
   &__item {
-    color: $black-color;
+    color: var(--black-color);
     font-family: $secondary-font;
     font-weight: bold;
     margin: 0 0.2rem;
@@ -98,8 +98,8 @@
     }
 
     &:hover {
-      color: $black-color;
-      background-image: linear-gradient(to bottom, $pink-color 100%, transparent 50%);
+      color: var(--black-color);
+      background-image: linear-gradient(to bottom, var(--pink-color) 100%, transparent 50%);
       background-position: 0 1.03rem;
       background-repeat: repeat-x;
       background-size: 2px 6px;
@@ -111,27 +111,23 @@
   margin: 10px 0;
 }
 
-.kz-blog-list {
-  &__title {}
-}
-
 .kz-blog-item {
   &__date {
-    color: $grey-color;
+    color: var(--grey-color);
     justify-content: flex-end;
     margin-left: auto;
     text-align: end;
   }
 
   &__title {
-    color: $black-color;
+    color: var(--black-color);
     text-decoration: none;
   }
 
   &__info {
-    color: $grey-color;
+    color: var(--blue-color);
     font-family: $primary-font;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -143,18 +139,18 @@
   }
 
   &__title {
-    color: $yellow-color;
+    color: var(--yellow-color);
     margin-bottom: 0.2rem;
   }
 
   &__info {
-    color: $grey-color;
+    color: var(--blue-color);
     font-family: $primary-font;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   &__subtitle {
-    color: $grey-color;
+    color: var(--grey-color);
   }
 }
 
@@ -173,14 +169,14 @@
 
   &__button {
     border: 1px solid transparent;
-    color: $orange-color;
+    color: var(--orange-color);
     cursor: pointer;
     font-weight: bold;
     text-align: center;
     white-space: nowrap;
 
     &:hover {
-      color: $orange-color;
+      color: var(--orange-color);
     }
   }
 }
@@ -190,7 +186,7 @@
 }
 
 .kz-progress {
-  background: linear-gradient(to right, $orange-color var(--scroll), transparent 0);
+  background: linear-gradient(to right, var(--orange-color) var(--scroll), transparent 0);
   background-repeat: no-repeat;
   position: fixed;
   width: 100%;
@@ -216,17 +212,17 @@
 }
 
 .kz-tag {
-  background-color: $grey-color;
+  background-color: var(--grey-color);
   border-radius: 6px;
-  color: $white-color;
+  color: var(--white-color);
   font-size: 10px;
   padding: 2px 4px;
 
   &--category {
-    background-color: $blue-color;
+    background-color: var(--blue-color);
   }
 
   &--tag {
-    background-color: $green-color;
+    background-color: var(--green-color);
   }
 }

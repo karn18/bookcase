@@ -20,7 +20,7 @@
       {% endfor %}
 
       {% if sameTagCount >= minCommonTags %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
+        <a href="{{ site.baseurl }}{{ post.url | uri_escape }}">
             <div class="rel">
                 <h5>{{ post.title }}</h5>
                 <img width="100%" src="/thumbs/{{post.image}}">

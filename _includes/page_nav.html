@@ -2,12 +2,12 @@
   <div class="kz-pagination">
     <div class="kz-pagination__newer">
     {% if paginator.previous_page %}
-      <a class="kz-pagination__button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
+      <a class="kz-pagination__button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | uri_escape }}">&larr; Newer</a>
     {% endif %}
     </div>
     <div class="kz-pagination__older">
     {% if paginator.next_page %}
-      <a class="kz-pagination__button" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
+      <a class="kz-pagination__button" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | uri_escape }}">Older &rarr;</a>
     {% endif %}
     </div>
   </div>
