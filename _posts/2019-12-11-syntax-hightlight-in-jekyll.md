@@ -10,8 +10,6 @@ categories: dev
 cover: '/assets/images/posts/2019/syntax-hightlight-in-jekyll/cover.png'
 image:
   path: '/assets/images/posts/2019/syntax-hightlight-in-jekyll/cover.png'
-  height: 100
-  width: 100
 ---
 สำหรับการเขียนบทความที่มีการใส่โค้ดลงไปด้วยนั้น ทำให้ผู้อ่านได้เห็นตัวอย่างเข้าใจเนื้อหาเกี่ยวกับการเขียนโปรแกรมได้ดียิ่งขึ้น หรือแม้กระทั่งเป็นตัวอย่างเพื่อนำไปพัฒนาต่อยอดได้ ซึ่ง **Jekyll** ก็รองรับการแสดงผลโค้ดไฮไลท์เอาไว้ด้วย <!--more-->
 

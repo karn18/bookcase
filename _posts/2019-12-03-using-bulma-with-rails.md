@@ -10,8 +10,6 @@ categories: dev
 cover: '/assets/images/posts/2019/using-bulma-with-rails/cover.png'
 image:
   path: '/assets/images/posts/2019/using-bulma-with-rails/cover.png'
-  height: 100
-  width: 100
 ---
 
 ถ้าจะกล่าวถึง CSS Framework ที่เป็นที่นิยมใช้กันนั้นก็มีอยู่ด้วยกันหลากหลาย สำหรับในบทความนี้จะกล่าวถึง **Bulma** ซึ่งเป็น CSS Framework ที่ใช้งานได้ง่าย ไม่ซับซ้อนและแลดูสวยงามเมื่อแสดงผลอยู่บนเว็บบราวเซอร์ โดยในวันนี้เราจะนำ **Bulma** มาใช้งานร่วมกันกับ **Rails**

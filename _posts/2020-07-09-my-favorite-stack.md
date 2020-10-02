@@ -12,8 +12,6 @@ categories: dev
 cover: "/assets/images/posts/2020/my-favorite-stack/cover.png"
 image:
   path: "/assets/images/posts/2020/my-favorite-stack/cover.png"
-  height: 100
-  width: 100
 date: 2020-07-09 22:11 +0700
 ---
 สำหรับบทความนี้จะมาลองแชร์ Stack ในการพัฒนาโปรแกรมกัน โดยแต่ละคนก็จะมีความชื่นชอบแตกต่างๆ กันไป ซึ่งก็คงจะผ่านการทดลอง ฝึกฝนจนชำนาญ เพื่อให้การทำงานของเรามีประสิทธิภาพมากที่สุด

@@ -11,8 +11,6 @@ categories: dev
 cover: '/assets/images/posts/2019/customize-reading-time-with-thai-nlp/cover.png'
 image:
   path: '/assets/images/posts/2019/customize-reading-time-with-thai-nlp/cover.png'
-  height: 100
-  width: 100
 ---
 
 บทความนี้จะกล่าวถึงการคำนวณเวลาที่ใช้ในการอ่านบทความ ซึ่งในส่วนของ **Jekyll** จะมีปลักอินที่ชื่อ **liquid_reading_time** ที่ถูกนำมาใช้ในการคำนวณเวลาโดยเฉลี่ยในการอ่านบทความหนึ่งๆ และแสดงให้ผู้อ่านเห็น <!--more-->โดยมีสูตรที่ว่า
