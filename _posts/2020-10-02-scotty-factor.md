@@ -3,7 +3,7 @@ layout: post
 title: Scotty Factor
 author: Karn
 tags:
-- estimation
+  - estimation
 categories: dev
 cover: "/assets/images/posts/2020/scotty-factor/cover.jpg"
 image:

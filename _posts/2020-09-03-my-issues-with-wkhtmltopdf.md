@@ -3,8 +3,8 @@ layout: post
 title: My Issues with WKHTMLTOPDF
 author: Karn
 tags:
-- ruby
-- wkhtmltopdf
+  - ruby
+  - wkhtmltopdf
 categories: dev
 cover: "/assets/images/posts/2020/my-issues-with-wkhtmltopdf/cover.png"
 image:

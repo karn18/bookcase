@@ -3,8 +3,8 @@ layout: post
 title: เรียนรู้เกี่ยวกับ Ruby Blocks
 author: Karn
 tags:
-- ruby
-- 101
+  - ruby
+  - 101
 categories: dev
 cover: "/assets/images/posts/2020/ruby-blocks/cover.png"
 image:

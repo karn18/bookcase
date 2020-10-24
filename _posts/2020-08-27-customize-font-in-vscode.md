@@ -3,8 +3,8 @@ layout: post
 title: แต่งฟ้อนต์ใน VSCODE แบบใช้งานจริง
 author: Karn
 tags:
-- vscode
-- font
+  - vscode
+  - font
 categories: dev
 cover: "/assets/images/posts/2020/customize-font-in-vscode/cover.png"
 image:

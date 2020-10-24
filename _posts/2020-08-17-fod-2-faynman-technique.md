@@ -3,10 +3,10 @@ layout: post
 title: 'FOD#2: Faynman Technique'
 author: Karn
 tags:
-- fod
-- faynman
-- learning
-- teaching
+  - fod
+  - faynman
+  - learning
+  - teaching
 categories: fod
 cover: "/assets/images/posts/2020/favorite-of-the-day-2/cover.jpg"
 image:

@@ -3,8 +3,8 @@ layout: post
 title: It is not an easy path
 author: Karn
 tags:
-- rails
-- ruby
+  - rails
+  - ruby
 categories: dev
 date: 2020-10-01 14:35 +0700
 cover: "/assets/images/posts/2020/it-is-not-an-easy-path/cover.jpg"

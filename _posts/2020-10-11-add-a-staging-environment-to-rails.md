@@ -3,9 +3,9 @@ layout: post
 title: เพิ่ม Staging Environment ให้กับ Rails
 author: Karn
 tags:
-- environments
-- rails
-- ruby
+  - environments
+  - rails
+  - ruby
 categories: dev
 cover: "/assets/images/posts/2020/add-a-staging-environment-to-rails/cover.png"
 image:

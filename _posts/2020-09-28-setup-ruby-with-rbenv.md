@@ -2,9 +2,9 @@
 layout: post
 title: ติดตั้ง ruby ด้วย rbenv
 tags:
-- rbenv
-- ruby
-- 101
+  - rbenv
+  - ruby
+  - 101
 categories: dev
 cover: "/assets/images/posts/2020/setup-ruby-with-rbenv/cover.png"
 image:

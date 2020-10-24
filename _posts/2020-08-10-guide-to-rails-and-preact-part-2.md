@@ -3,8 +3,8 @@ layout: post
 title: Guide to Rails and Preact (Part 2)
 author: Karn
 tags:
-- rails
-- preact
+  - rails
+  - preact
 categories: dev
 cover: "/assets/images/posts/2020/guide-to-rails-and-preact-part-2/cover.jpg"
 image:

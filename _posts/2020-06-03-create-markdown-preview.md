@@ -3,10 +3,10 @@ layout: post
 title: ลองพัฒนา markdown preview
 author: Karn
 tags:
-- markdown
-- rails
-- ruby
-- stimulus
+  - markdown
+  - rails
+  - ruby
+  - stimulus
 categories: dev
 thumbnail: "/assets/images/posts/2020/create-markdown-preview/thumbnail.jpg"
 image:

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   {%- include head.html -%}
-  <body data-theme="light">
+  <body data-theme="dark">
     <div class="kz-progress"></div>
     <main class="kz-main-container">
       {%- include navbar.html -%}
@@ -27,6 +27,20 @@
           {% for post in site.categories['tech'] limit: 6 %}
             <li class="kz-blog-item">
               <a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a>
+              <div class="kz-blog-item__info">
+                <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section>
+        <h2>STEM</h2>
+        <ul class="kz-blog-list">
+          {% for post in site.categories['stem'] limit: 6 %}
+            <li class="kz-blog-item">
+              <a class="kz-blog-item__title" href="{{ post.url | uri_escape }}">{{ post.title }}</a>
               <div class="kz-blog-item__info">
                 <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
               </div>

@@ -3,9 +3,9 @@ layout: post
 title: เปลี่ยน id ให้เป็น hash id บน URL
 author: Karn
 tags:
-- rails
-- ruby
-- hashids
+  - rails
+  - ruby
+  - hashids
 categories: dev
 cover: "/assets/images/posts/2020/use-hash-id-instead-of-id-for-url/cover.jpg"
 image:

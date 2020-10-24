@@ -3,8 +3,13 @@ layout: post
 title: เปลี่ยนมาใช้ Sidekiq Scheduler ดีกว่า
 author: Karn
 tags:
-- ruby
+  - ruby
 categories: dev
+cover: "/assets/images/posts/2020/change-to-sidekiq-scheduler/cover.png"
+image:
+  path: "/assets/images/posts/2020/change-to-sidekiq-scheduler/cover.png"
+  width: 1200
+  height: 630
 date: 2020-10-13 12:10 +0700
 ---
 สำหรับงานที่ถูกเรียกใช้งานเมื่อถึงกำหนดเวลา หรือถูกปลุกขึ้นมาทำงานเมื่อถึงรอบเวลาที่เรียกว่า **Scheduler** มีประโยชน์อย่างมากสำหรับการจัดการเหตุการณ์ที่ไม่ต้องตอบสนองกับผู้ใช้งานทันทีทันใด ยกตัวอย่างเช่น

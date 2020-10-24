@@ -2,8 +2,8 @@
 layout: post
 title: Monkey Path to History.pushState
 tags:
-- javascript
-- html
+  - javascript
+  - html
 categories: dev
 date: 2020-06-26 16:56 +0700
 ---

@@ -3,8 +3,8 @@ layout: post
 title: เพิ่มฟิลด์ใหักับ nested attributes แบบ dynamic ด้วย stimulus
 author: Karn
 tags:
-- rails
-- stimulus
+  - rails
+  - stimulus
 categories: dev
 cover: "/assets/images/posts/2020/add-dynamic-nested-attributes-with-stimulus/cover.png"
 image:

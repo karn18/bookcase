@@ -3,9 +3,9 @@ layout: post
 title: ส่งข้อมูลระหว่างแอพพลิเคชั่นผ่าน RabbitMQ
 author: Karn
 tags:
-- rails
-- ruby
-- rabbitmq
+  - rails
+  - ruby
+  - rabbitmq
 categories: dev
 cover: "/assets/images/posts/2020/communication-between-apps-with-rabbitmq/cover.jpg"
 image:

@@ -3,9 +3,9 @@ layout: post
 title: เพิ่ม README สำหรับโปรไฟล์ของคุณบน Github
 author: Karn
 tags:
-- github
-- readme
-- markdown
+  - github
+  - readme
+  - markdown
 categories: tech
 date: 2020-07-10 09:59 +0700
 ---

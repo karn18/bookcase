@@ -3,8 +3,8 @@ layout: post
 title: HEY เรามาแล้ว (Part 1)
 author: Karn
 tags:
-- hey
-- review
+  - hey
+  - review
 categories: tech
 date: 2020-06-27 15:39 +0700
 ---

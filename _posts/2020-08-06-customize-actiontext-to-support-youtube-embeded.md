@@ -3,11 +3,11 @@ layout: post
 title: ปรับแต่ง ActionText ให้รองรับ Youtube Embeded
 author: Karn
 tags:
-- actiontext
-- javascript
-- rails
-- ruby
-- stimulus
+  - actiontext
+  - javascript
+  - rails
+  - ruby
+  - stimulus
 categories: dev
 date: 2020-08-06 15:24 +0700
 ---

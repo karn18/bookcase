@@ -3,11 +3,11 @@ layout: post
 title: My Favorite Stack
 author: Karn
 tags:
-- html
-- javascript
-- rails
-- ruby
-- stimulus
+  - html
+  - javascript
+  - rails
+  - ruby
+  - stimulus
 categories: dev
 cover: "/assets/images/posts/2020/my-favorite-stack/cover.png"
 image:
