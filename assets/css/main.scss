@@ -40,10 +40,16 @@
 }
 
 [data-theme="light"] {
-  // body {
-    background: var(--white-color);
-    // color: var(--white-color);
-  // }
+  background: var(--white-color);
+
+  .kz-about {
+    &__follow {
+      a {
+        color: var(--grey-color);
+        font-family: $primary-font;
+      }
+    }
+  }
 }
 
 .kz-theme-switcher {
@@ -65,7 +71,7 @@
 
   &__follow {
     a {
-      color: var(--grey-color);
+      color: var(--white-color);
       font-family: $primary-font;
     }
   }
@@ -170,6 +176,14 @@
   &__subtitle {
     color: var(--grey-color);
   }
+}
+
+.kz-support-me {
+  margin-top: 30px;
+}
+
+.kz-related-blogs {
+  margin-top: 30px;
 }
 
 .kz-pagination {

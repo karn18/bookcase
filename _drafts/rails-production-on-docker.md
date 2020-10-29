@@ -2,22 +2,20 @@
 layout: post
 title: ถึงเวลาปล่อยแอพพลิเคชั่นด้วย Docker
 ---
-ผ่านมาก็หลายโปรเจค จะใช้ๆ **Docker** ก็หลายรอบ แต่คราวนี้ได้นำมาใช้จริงๆ บน **Production** 
 
-## Dockerfile
+พัฒนาแอพด้วย **Ruby on Rails** มาสักสามสี่โปรเจค เมื่อจะติดตั้งสำหรับ Production ก็จะทำแบบ manual ทั้งหมด ทั้งที่ตอนแรกก็ตั้งใจจะใช้ **Docker** จนมาถึงโปรเจคล่าสุดก็ได้ใช้สักที<!--more--> โดยถ้าลองค้นหาวิธีสร้าง **Dockerfile** ในอินเทอร์เน็ต ส่วนมากก็จะเจอ **Dockerfile** ที่คล้ายๆ กับตัวอย่างด้านล่าง ซึ่งเป็นรูปแบบที่ง่ายที่สุด
+
+## Simple Dockerfile
 
 ```Dockerfile
-# Use the Ruby 2.7.1 image from Docker Hub
+# Use the Ruby 2.7.2-slim image from Docker Hub
 # as the base image (https://hub.docker.com/_/ruby)
-FROM ruby:2.7.1
+FROM ruby:2.7.2-slim
 
-# Use a directory called /code in which to store
-# this application's files. (The directory name
-# is arbitrary and could have been anything.)
+# User /app for store application
 WORKDIR /app
 
-# Copy all the application's files into the /code
-# directory.
+# Copy all files into the /app
 COPY . /app
 
 # Run bundle install to install the Ruby dependencies.
@@ -35,3 +33,7 @@ RUN yarn install --check-files
 # run when this container starts.
 CMD ["rails", "server", "-b", "0.0.0.0"]
 ```
+
+## References:
+- [Sample Rails Application](https://docs.docker.com/compose/rails/)
+- [How to Dockerize a Rails Application](https://www.codewithjason.com/dockerize-rails-application/)
