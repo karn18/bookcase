@@ -47,6 +47,14 @@
       a {
         color: var(--grey-color);
         font-family: $primary-font;
+
+        &:visited {
+          color: var(--grey-color);
+        }
+
+        // &:hover {
+        //   color: var(--yellow-color);
+        // }
       }
     }
   }
@@ -73,6 +81,14 @@
     a {
       color: var(--white-color);
       font-family: $primary-font;
+
+      &:visited {
+        color: var(--white-color);
+      }
+
+      &:hover {
+        color: var(--yellow-color);
+      }
     }
   }
 
