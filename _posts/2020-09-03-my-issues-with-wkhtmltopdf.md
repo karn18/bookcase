@@ -9,6 +9,8 @@ categories: dev
 cover: "/assets/images/posts/2020/my-issues-with-wkhtmltopdf/cover.png"
 image:
   path: "/assets/images/posts/2020/my-issues-with-wkhtmltopdf/cover.png"
+  width: 1200
+  height: 630
 date: 2020-09-03 16:38 +0700
 ---
 ไม่ว่าจะทำโปรเจ็คไหนก็ต้องพบกับปัญหาอยู่เสมอ ขึ้นอยู่ว่าจะเล็กหรือใหญ่ขนาดไหนแตกต่างกันไป สำหรับปัญหาที่จะถูกยกมาเล่าสู่กันฟังในวันบทความนี้ จะเป็นเรื่องเกี่ยวกับการสร้างเอกสารรายงานออกมาในรูป **PDF** ซึ่งผมก็จะใช้เครื่องมือที่ชื่อว่า **WKHTMLTOPDF**<!--more-->

@@ -10,6 +10,8 @@ date: 2020-10-01 14:35 +0700
 cover: "/assets/images/posts/2020/it-is-not-an-easy-path/cover.jpg"
 image:
   path: "/assets/images/posts/2020/it-is-not-an-easy-path/cover.jpg"
+  width: 1200
+  height: 630
 ---
 > เมื่อเส้นทางไม่ได้โรยด้วยกลีบกุหลาบ ก็ต้องพยายามและฝ่าฝันกันไป
 

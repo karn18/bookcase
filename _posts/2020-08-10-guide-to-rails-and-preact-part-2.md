@@ -9,6 +9,8 @@ categories: dev
 cover: "/assets/images/posts/2020/guide-to-rails-and-preact-part-2/cover.jpg"
 image:
   path: "/assets/images/posts/2020/guide-to-rails-and-preact-part-2/cover.jpg"
+  width: 1200
+  height: 630
 date: 2020-08-10 22:02 +0700
 ---
 มาต่อจากตอนที่แล้ว [part 1]({% post_url 2020-06-19-guide-to-rails-and-preact-part-1 %}) เราได้สร้างโปรเจค **book_store** เอาไว้ แต่ยังไม่ได้มีการสร้างฟอร์มสำหรับเก็บข้อมูลหนังสือกันเลย สำหรับในบทความนี้จะลองเป็นการพัฒนาโปรแกรมในรูปแบบลูกผสม<!--more--> โดยจะให้ **Rails** ทำหน้าที่ในการจัด **routing** และ **render** หน้าเว็บหลัก แต่จะมีบางส่วนที่จะพัฒนาเป็น **Component** ขึ้นและใช้เป็น **CSR**

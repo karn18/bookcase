@@ -8,6 +8,8 @@ categories: dev
 cover: "/assets/images/posts/2020/scotty-factor/cover.jpg"
 image:
   path: "/assets/images/posts/2020/scotty-factor/cover.jpg"
+  width: 1200
+  height: 630
 date: 2020-10-02 17:41 +0700
 ---
 สำหรับใครที่เป็นแฟน **Star Trek** พอได้อ่านหัวข้อของบทความก็คงนึกถึง **Montgomery "Scotty" Scott** ขึ้นมาทันที ใช่แล้วหละครับในบทความนี้จะเกี่ยวข้องกับ **Scotty** จาก **Star Trek** โดยที่ **Scotty** เป็นวิศวกรประจำยาน **Enterprise** ซึ่งเค้าเคยช่วยชีวิตลูกเรือของ **USS Enterprise** ให้รอดพ้นจากอันตรายต่างๆ ได้อย่างปาฏิหาริย์อยู่เสมอ จนได้รับการขนานนามว่า **"Miracle Worker"**<!--more-->

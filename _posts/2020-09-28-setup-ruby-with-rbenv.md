@@ -9,6 +9,8 @@ categories: dev
 cover: "/assets/images/posts/2020/setup-ruby-with-rbenv/cover.png"
 image:
   path: "/assets/images/posts/2020/setup-ruby-with-rbenv/cover.png"
+  width: 1200
+  height: 630
 date: 2020-09-28 18:04 +0700
 ---
 สำหรับผู้เริ่มต้นจะใช้ **Ruby** การเตรียมสภาพแวดล้อมต่างๆ ให้พร้อมบนเครื่องคอมพิวเตอร์นั้นจำเป็นอย่างมาก ดังนั้นในบทความนี้จะเป็นจุดเริ่มต้นก่อนที่จะลงมือศึกษาการเขียนโค้ดอย่างจริงจังด้วยภาษา **Ruby** ซึ่งก็คือการติดตั้ง **Ruby** นั้นเองครับ

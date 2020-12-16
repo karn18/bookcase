@@ -46,5 +46,5 @@ date: 2020-11-04 11:54 +0700
 ## References
 - [GitHub Actions](https://github.com/features/actions)
 - [Actions Cache](https://github.com/actions/cache)
-- [Codecov](codecov.io/)
+- [Codecov](https://codecov.io/)
 - [ตัวอย่างการใช้ GitHub Actions](https://github.com/karn18/ruby-actions)

@@ -11,6 +11,8 @@ categories: fod
 cover: "/assets/images/posts/2020/favorite-of-the-day-2/cover.jpg"
 image:
   path: "/assets/images/posts/2020/favorite-of-the-day-2/cover.jpg"
+  width: 1200
+  height: 630
 date: 2020-08-17 22:16 +0700
 ---
 ## Faynman Technique (เทคนิคไฟยน์แมน)
