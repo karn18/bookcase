@@ -1,19 +1,17 @@
 ---
-layout: default
+layout: home
 ---
-<div class="kz-blog">
+<div class="blog">
   {% include blog_header.html blog=page %}
   {% if page.cover %}
     <figure class="image blog-image-header">
       <img src="{{ page.cover }}">
     </figure>
   {% endif %}
-  <div class="blog-content is-family-secondary">
+  <div class="blog__content">
     {{ content }}
   </div>
-  <!-- {% include share_buttons.html %} -->
-  <!-- {% include comments.html %} -->
-  <!-- {% include blog_nav.html %} -->
+  {% include blog_nav.html %}
 </div>
 
 

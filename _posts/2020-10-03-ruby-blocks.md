@@ -29,6 +29,6 @@ end
 
 จะพูดให้ง่ายๆ **Block** ก็คือ **Anonymous Function** ที่ถูกนิยามขึ้นโดยไม่มีฟังก์ชัน และถูกเรียกใช้งานในทันที ซึ่งจะใช้ `{}` หรือ `do/end` ก็ได้ แต่ส่วนใหญ่เราจะใช้ `{}` ในกรณีที่โค้ดเรามีเพียงบรรทัดเดียว และจะใช้ `do/end` เมื่อโค้ดมีหลายบรรทัด ทั้งนี้ก็เพื่อความสวยงาม และอ่านได้ง่าย
 
-# References:
+## References:
 - [http://marcuscode.com/lang/ruby/variables-and-variable-scope](http://marcuscode.com/lang/ruby/variables-and-variable-scope)
 - [https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/](https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/)

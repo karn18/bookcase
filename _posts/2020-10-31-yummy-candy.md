@@ -31,6 +31,6 @@ date: 2020-10-31 22:50 +0700
 ![showcase](/assets/images/posts/2020/yummy-candy/cut.gif)
 *Yummy*
 
-# References
+## References
 - [Scratch](https://scratch.mit.edu)
 - [micro:bit](https://microbit.org/)

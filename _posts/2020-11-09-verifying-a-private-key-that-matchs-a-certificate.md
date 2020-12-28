@@ -28,6 +28,6 @@ $ sudo openssl x509 -noout -modulus -in certificate.crt |md5sum
 
 > การตรวจสอบค่าอาจจะใช้ algorithm อื่นแทน MD5 ก็ได้ ไม่ว่าจะเป็น SHA1 หรือ SHA256
 
-# References
+## References
 - [Cert Key Matcher](https://comodosslstore.com/ssltools/cert-key-matcher.php)
 - [Check if certificate private key and csr match](https://www.looklinux.com/check-if-certificate-private-key-and-csr-match/)

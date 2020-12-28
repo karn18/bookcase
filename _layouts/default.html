@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="en">
   {%- include head.html -%}
-  <body data-theme="dark">
-    <div class="kz-progress"></div>
-    <div class="kz-main-container">
+  <body>
+    <div class="progress"></div>
+    <main>
       {%- include navbar.html -%}
-      <div class="kz-content">
-        {{ content }}
-      </div>
-    </div>
-    {%- include progress.html -%}
+      {{ content }}
+    </main>
+    {%- include footer.html -%}
   </body>
 </html>

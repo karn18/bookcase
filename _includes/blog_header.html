@@ -1,6 +1,6 @@
-<div class="kz-blog__header">
-  <h1 class="kz-blog__title">{{ include.blog.title | escape }}</h1>
-  <div class="kz-blog__info">
+<div class="blog__header">
+  <h1 class="blog__title">{{ include.blog.title | escape }}</h1>
+  <div class="blog__info">
     <i class="typcn typcn-calendar-outline"></i> {{ include.blog.date | date: "%d-%m-%Y" }}
     {% if include.blog.tags.size > 0 %}
       | <i class="typcn typcn-tag"></i>

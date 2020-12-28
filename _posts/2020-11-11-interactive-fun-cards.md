@@ -50,6 +50,6 @@ date: 2020-11-11 11:42 +0700
 
 ถ้าอยากดูรายละเอียดเพิ่มเติมดูได้จาก repo ที่แชร์ไว้ด้านล่างนะครับ 👇
 
-# References
+## References
 - [Fun Games](https://github.com/karn18/fun_games)
 - [CSS for fliping card](https://codepen.io/james_gillen/pen/NGwqML)

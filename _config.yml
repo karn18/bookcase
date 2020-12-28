@@ -37,25 +37,15 @@ sass:
   style: compressed
 
 # Build settings
-# theme: minima
+# theme: false
+
 plugins:
-  # - jekyll-archives
+  - jekyll-archives
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-seo-tag
   - liquid_pluralize
-  # - liquid_reading_time
-
-# jekyll-archives:
-#   enabled: all
-#   layout: archive
-#   permalinks:
-#     year: '/:year/'
-#     month: '/:year/:month/'
-#     day: '/:year/:month/:day/'
-#     tag: '/tag/:name/'
-#     category: '/category/:name/'
 
 excerpt_separator: <!--more-->
 
@@ -79,7 +69,7 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: true
+      line_numbers: false
 
 pagination:
   enabled: true
@@ -89,6 +79,16 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
-# reading_time:
-#   reading_speed: 250
-#   thai_nlp: true
+jekyll-archives:
+  enabled: 
+    - year
+    - tags
+  layouts: 
+    year: year-archive
+    tag: tag-archive
+  permalinks:
+    year: '/archives/:year/'
+    month: '/archives/:year/:month/'
+    day: '/archives/:year/:month/:day/'
+    tag: '/archives/tag/:name/'
+    category: '/archives/category/:name/'

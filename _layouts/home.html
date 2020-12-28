@@ -1,69 +1,12 @@
 <!doctype html>
 <html lang="en">
   {%- include head.html -%}
-  <body data-theme="dark">
-    <div class="kz-progress"></div>
-    <main class="kz-main-container">
+  <body>
+    <div class="progress"></div>
+    <main>
       {%- include navbar.html -%}
-
-      <!-- Dev -->
-      <section>
-        <h2>Development</h2>
-        <ul class="kz-blog-list">
-          {% for post in site.categories['dev'] limit: 6 %}
-            <li class="kz-blog-item">
-              <a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a>
-              <div class="kz-blog-item__info">
-                <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-
-      <section>
-        <h2>Technology</h2>
-        <ul class="kz-blog-list">
-          {% for post in site.categories['tech'] limit: 6 %}
-            <li class="kz-blog-item">
-              <a class="kz-blog-item__title" href="{{ post.url }}">{{ post.title }}</a>
-              <div class="kz-blog-item__info">
-                <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-
-      <section>
-        <h2>STEM</h2>
-        <ul class="kz-blog-list">
-          {% for post in site.categories['stem'] limit: 6 %}
-            <li class="kz-blog-item">
-              <a class="kz-blog-item__title" href="{{ post.url | uri_escape }}">{{ post.title }}</a>
-              <div class="kz-blog-item__info">
-                <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-
-      <section>
-        <h2>Favorite Of the Day</h2>
-        <ul class="kz-blog-list">
-          {% for post in site.categories['fod'] limit: 6 %}
-            <li class="kz-blog-item">
-              <a class="kz-blog-item__title" href="{{ post.url | uri_escape }}">{{ post.title }}</a>
-              <div class="kz-blog-item__info">
-                <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
+      {{ content }}
     </main>
-    <!-- {%- include footer.html -%} -->
-    {%- include progress.html -%}
+    {%- include footer.html -%}
   </body>
 </html>
