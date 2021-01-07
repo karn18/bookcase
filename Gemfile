@@ -16,6 +16,7 @@ gem 'jekyll-paginate-v2'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'liquid_pluralize'
+gem 'rake'
 # gem 'liquid_reading_time', git: 'https://github.com/karn18/reading_time.git'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
