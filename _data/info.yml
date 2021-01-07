@@ -1,0 +1,8 @@
+- name: dev
+  title: Development
+- name: tech
+  title: Technology
+- name: stem
+  title: STEM
+- name: fod
+  title: Favorite Of the Day
