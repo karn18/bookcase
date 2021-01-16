@@ -127,20 +127,22 @@ strong {
 }
 
 blockquote {
-  border-left: 4px solid $color-accent;
+  border-left: 4px solid $color-grey;
   padding: 0 15px !important;
   margin: 50px auto;
   font-size: $font-base-large;
   color: $color-green;
+  padding: 2em 0 0.5em;
+  margin-top: 4em;
+  position: relative;
 
   &:before {
-    content: "";
+    content: '\201C';
     position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 6em/1.08em 'PT Sans', sans-serif;
+    text-align: center;
   }
 
   h1,
@@ -150,6 +152,34 @@ blockquote {
     text-align: left;
   }
 }
+
+// blockquote {
+  // display: block;
+  // border-width: 2px 0;
+  // border-style: solid;
+  // border-color: #eee;
+  
+// }
+// blockquote:before {
+//   content: '\201C';
+//   position: absolute;
+//   top: 0em;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   background: #fff;
+//   width: 3rem;
+//   height: 2rem;
+//   font: 6em/1.08em 'PT Sans', sans-serif;
+//   color: #666;
+//   text-align: center;
+// }
+// blockquote:after {
+//   content: "\2013 \2003" attr(cite);
+//   display: block;
+//   text-align: right;
+//   font-size: 0.875em;
+//   color: #e74c3c;
+// }
 
 hr {
   display: block;
