@@ -10,7 +10,7 @@ ruby File.read(File.join(File.dirname(__FILE__), ".ruby-version")).strip
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.1.0"
+gem "jekyll", "~> 4.2.0"
 gem 'jekyll-archives'
 gem 'jekyll-paginate-v2'
 gem 'jekyll-seo-tag'

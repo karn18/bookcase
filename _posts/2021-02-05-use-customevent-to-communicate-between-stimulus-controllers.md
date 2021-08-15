@@ -127,3 +127,4 @@ export default class extends Controller {
 - [Create Custom Events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
 - [Communication Between Controllers](https://github.com/hotwired/stimulus/issues/35)
 - [Inspired by this tweet from Matt Swanson](https://twitter.com/_swanson/status/1356620139102306305)
+****

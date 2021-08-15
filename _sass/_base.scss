@@ -151,6 +151,11 @@ blockquote {
     margin-top: 0.5em;
     text-align: left;
   }
+  p {
+    code {
+      font-size: 0.8em;
+    }
+  }
 }
 
 // blockquote {
