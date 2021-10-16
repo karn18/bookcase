@@ -1,12 +1,14 @@
 ---
 ---
-@charset "utf-8";
 
-@import 
-  "mixins",
-  "fonts",
-  "base",
-  "nav",
-  "pages",
-  "typicons",
-  "hightlight";
+@import "fonts";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-blue-600 text-white rounded;
+  }
+}

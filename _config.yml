@@ -34,10 +34,10 @@ social:
     - https://github.com/karn18
 
 sass:
-  style: compressed
-
-# Build settings
-# theme: false
+#   style: compressed
+  load_paths: [
+    '_sass'
+  ]
 
 plugins:
   - jekyll-archives
