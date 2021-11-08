@@ -1,22 +1,20 @@
-<!-- <input type="checkbox" id="hamburger" class="nav-checkbox"/> -->
-<!-- <label class="nav-mobile-button" for="hamburger">Menu</label> -->
 
-<nav class="nav">
-  <div class="nav__menu">
-    <!-- <label class="nav-mobile-button nav-mobile-button--close" for="hamburger"><span></span> close</label> -->
-    <ul class="nav__list nav__list--horizontal{% if include.type == "horizontal" %} nav__list--horizontal{% endif %}">
-      <li>
-        <a href="/" class="nav__list-link"><i class="typcn typcn-pen"></i>บทความ</a>
-      </li>
-      <li>
-        <a href="/archives" class="nav__list-link"><i class="typcn typcn-archive"></i><span>คลัง</span></a>
-      </li>
-      <!-- <li>
-        <a href="/about" class="nav__list-link"><i class="typcn typcn-user"></i><span>เกี่ยวกับเรา</span></a>
-      </li> -->
-      <li>
-        <a href="/feed.xml" class="nav__list-link"><i class="typcn typcn-rss"></i><span>rss</span></a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div class="max-w-4xl mx-auto py-4 px-2 md:px-none">
+  <nav class="flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 relative" data-controller="menu">
+    <a href="/">
+      <span><strong>KT</strong></span>
+    </a>
+    <button class="inline-block md:hidden w-8 h-8 bg-purple-600 ring-4 ring-purple-200 text-white p-1 rounded-md" data-menu-target="togglable" data-action="click->menu#toggle">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    
+    <div class="absolute md:relative top-18 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-8 md:p-0 border-1 border-gray-500 hidden"
+        data-menu-target="panel">
+      <a href="/" class="block py-1 text-purple-600 underline wavy hover:wavy">Blog</a>
+      <a href="/archives" class="block py-1 text-purple-600 underline wavy hover:wavy">Archives</a>
+      <!-- <a href="/about" class="block py-1 text-purple-600 underline wavy">Me</a> -->
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Bai Jamjuree";
+  font-weight: normal;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: local('BaiJamjuree-Regular'), url('BaiJamjuree-Regular.woff2');
+  src: url("/assets/fonts/BaiJamjuree-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bai Jamjuree";
+  font-weight: normal;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: local('BaiJamjuree-Italic'), url('BaiJamjuree-Italic.woff2');
+  src: url("/assets/fonts/BaiJamjuree-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bai Jamjuree";
+  font-weight: bold;
+  font-style: normal;
+  font-named-instance: 'Bold';
+  src: local('BaiJamjuree-Bold'), url('BaiJamjuree-Bold.woff2');
+  src: url("/assets/fonts/BaiJamjuree-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bai Jamjuree";
+  font-weight: bold;
+  font-style: italic;
+  font-named-instance: 'Bold Italic';
+  src: local('BaiJamjuree-BoldItalic'), url('BaiJamjuree-BoldItalic.woff2');
+  src: url("/assets/fonts/BaiJamjuree-BoldItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Prompt";
+  font-weight: normal;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: local('Prompt-Regular'), url('Prompt-Regular.woff2');
+  src: url("/assets/fonts/Prompt-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Prompt";
+  font-weight: bold;
+  font-style: bold;
+  font-named-instance: 'Bold';
+  src: local('Prompt-Bold'), url('Prompt-Bold.woff2');
+  src: url("/assets/fonts/Prompt-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'JetBrainsMono';
+  font-weight: 100 800;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: local('JetBrainsMono-Regular'), url('JetBrainsMono-Regular.woff2');
+  src: url('/assets/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-variant-ligatures: normal;
+}
+
+@font-face{
+  font-family: 'JetBrainsMono';
+  font-weight: 100 800;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: local('JetBrainsMono-Italic'), url('JetBrainsMono-Italic.woff2');
+  src: url('/assets/fonts/JetBrainsMono-Italic.woff2') format('woff2');
+  font-display: swap;
+  font-variant-ligatures: normal;
+}
