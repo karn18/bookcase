@@ -3,11 +3,8 @@
   {%- include head.html -%}
   <body>
     <div class="progress"></div>
-    <header class="container mx-auto">
-      <h1>Hello</h1>
-    </header>
-    <main class="container mx-auto">
-      {%- include navbar.html -%}
+    {%- include navbar.html -%}
+    <main class="max-w-4xl mx-auto pt-4 md:pt-8 pb-8 md:pb-20 px-2 md:px-none">
       {{ content }}
     </main>
     {%- include footer.html -%}

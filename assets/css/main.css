@@ -1,0 +1,121 @@
+---
+---
+@import "fonts";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@layer utilities {
+  .wavy {
+    text-decoration-style: wavy;
+  }
+
+  @variants hover, focus {
+    .wavy {
+      text-decoration-style: wavy;
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply text-lg md:text-2xl leading-loose;
+  }
+
+  strong {
+    @apply font-bold;  
+  }
+
+  h1, h2, h3 {
+    @apply font-serif font-bold;
+  }
+
+  h1 {
+    @apply text-pink-400 text-3xl;
+  }
+
+  h2 {
+    @apply text-green-300 text-2xl;
+  }
+
+  a {
+    @apply text-lg md:text-2xl text-orange-400 no-underline wavy hover:underline hover:wavy;
+  }
+
+  p {
+    @apply text-lg md:text-2xl mb-10;
+  }
+
+  code {
+    @apply text-lg md:text-2xl font-mono break-words;
+  }
+
+  p code {
+    @apply text-lg md:text-2xl bg-red-100 rounded-full overflow-auto px-2 mb-10;
+  }
+
+  p img {
+    @apply py-4 mx-auto;
+  }
+
+  p img + em {
+    @apply block text-center font-serif mx-auto text-sm text-pink-400;
+  }
+
+  ol, ul {
+    @apply ml-6;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  figure, img, video {
+    @apply max-w-full text-center;
+  }
+}
+
+@layer components {
+  .blog__content {
+    @apply py-4;
+  }
+
+  .blog_content p {
+    @apply py-4 text-3xl;
+  }
+
+  .blog_content strong {
+    @apply font-bold;
+  }
+
+  .blog_content a {
+    @apply text-red-400;
+  }
+
+  .blog_content img, .blog_content figure, .blog_content video {
+    @apply mx-auto;
+  }
+
+  div.highlighter-rouge {
+    @apply bg-gray-100 rounded-xl p-4 mt-4 mb-10;
+  }
+
+  .highlight code {
+    @apply text-lg md:text-2xl no-underline;
+  }
+
+  .highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
+  .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
+  .lineno::selection {background-color: transparent;} /* Other major browsers */
+
+  .highlight pre {
+    @apply bg-gray-100 rounded-xl overflow-auto;
+  }
+}
+
