@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rails+Rollup+Dynamic Import
+description: เมื่อต้องทำงานร่วมกันระหว่าง Rails, Rollup และ Dynamic Import
 author: Karn
 tags:
 - ruby

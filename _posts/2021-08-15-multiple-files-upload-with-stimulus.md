@@ -14,7 +14,7 @@ image:
 categories: dev
 date: 2021-08-15 19:11 +0700
 ---
-ต้องขอบคุณบทความ [Upload Multiple-files With Rails/](https://mentalized.net/journal/2020/11/30/upload-multiple-files-with-rails/) ของคุณ Jakob Skjerning ที่ทำให้เราสามารถเห็นรายชื่อไฟล์ที่เราเลือกที่จะใช้สำหรับอัพโหลดได้
+ต้องขอบคุณบทความ [Upload Multiple-files With Rails/](https://mentalized.net/journal/2020/11/30/upload-multiple-files-with-rails/) ของคุณ Jakob Skjerning ที่ทำให้เราสามารถเห็นรายชื่อไฟล์ที่เราเลือกที่จะใช้สำหรับอัพโหลดได้<!--more-->
 
 สำหรับในบทความนี้ก็จะมาทำการต่อยอดสักเล็กน้อย เนื่องจาก
 1. การที่กำหนด mulitple เป็น true เมื่อเลือกหลายๆ ไฟล์ปรากฏว่าไฟล์ที่เลือกมาแสดงจริงๆ มีแค่ไฟล์แรกไฟล์เดียวเท่านั้น

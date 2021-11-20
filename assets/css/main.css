@@ -79,29 +79,32 @@
   figure, img, video {
     @apply max-w-full text-center;
   }
+
+  blockquote {
+    @apply mx-auto text-3xl relative max-w-xs md:max-w-xl p-2 font-serif my-12 self-center;
+  }
+  
+  blockquote:before,
+  blockquote:after {
+    @apply absolute text-green-200 text-4xl md:text-9xl w-16 h-16;
+  }
+
+  blockquote:before {
+    content: '“';
+    @apply -left-10 md:-left-20 -top-12;
+  }
+  
+  blockquote:after {
+    content: '”';
+    @apply -right-20;
+  }
+
+  blockquote p {
+    @apply my-0;
+  }
 }
 
 @layer components {
-  .blog__content {
-    @apply py-4;
-  }
-
-  .blog_content p {
-    @apply py-4 text-3xl;
-  }
-
-  .blog_content strong {
-    @apply font-bold;
-  }
-
-  .blog_content a {
-    @apply text-red-400;
-  }
-
-  .blog_content img, .blog_content figure, .blog_content video {
-    @apply mx-auto;
-  }
-
   div.highlighter-rouge {
     @apply bg-gray-100 rounded-xl p-4 mt-4 mb-10;
   }

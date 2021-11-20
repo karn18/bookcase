@@ -1,18 +1,20 @@
 ---
 layout: home
 ---
-<section class="home-box">
-  <div class="home-box__room">
+<section>
+  <div>
     <h1>{{ page.date | date: "%Y" }}</h1>
-    <ul>
-      {% for post in page.posts %}
-        <li class="blog-item">
-          <a class="blog-item__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <div class="blog-item__info">
-            <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for post in page.posts %}
+      <a href="{{ post.url | relative_url }}" class="flex flex-col md:flex-row rounded-lg bg-white hover:bg-gray-100 border shadow-md items-center my-8">
+        <img class="w-auto h-auto max-h-full md:max-h-40 md:max-w-xs object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" 
+          src="{{ post.cover }}">
+        <div class="w-full p-4 flex flex-col justify-between leading-normal">
+          <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">
+            {{ post.title | escape }}
+          </h5>
+          <p class="text-sm text-gray-700 mb-3">{{ post.date | date: "%b %-d, %Y" }}</p>
+        </div>
+      </a>
+    {% endfor %}
   </div>
 </section>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sprocket กับไฟล์ assets ที่เข้ารหัสไว้แล้ว
+description: เมื่อไฟล์ assets ที่ได้จาก chunk name ได้ทำการ digested ไว้แล้ว Sprocket จะจัดการได้อย่างไร
 author: Karn
 tags:
 - ruby
@@ -14,7 +15,7 @@ image:
   height: 800
 date: 2021-11-07 21:53 +0700
 ---
-แม้ว่า **Rails** จะอัพเดตเป็นเวอร์ชัน 7 แล้วแต่ **Sprocket** ก็ถือเป็นอีกหนึ่งไลบราลีที่ยังคงผูกอยู่กับ **Rails** เพื่อใช้ในการจัดการคอมไฟล์ และดูแลจัดการ assets ต่างๆ ด้วย ยิ่งในระดับโปรดักชันแล้ว **Sprocket** จะช่วยทำ fingering ไฟล์ assets ต่างๆ เพื่อใช้สำหรับ caching อีกด้วย<!-- more -->
+แม้ว่า **Rails** จะอัพเดตเป็นเวอร์ชัน 7 แล้วแต่ **Sprocket** ก็ถือเป็นอีกหนึ่งไลบราลีที่ยังคงผูกอยู่กับ **Rails** เพื่อใช้ในการจัดการคอมไฟล์ และดูแลจัดการ assets ต่างๆ ด้วย ยิ่งในระดับโปรดักชันแล้ว **Sprocket** จะช่วยทำ fingering ไฟล์ assets ต่างๆ เพื่อใช้สำหรับ caching อีกด้วย<!--more-->
 
 และจากบทความเรื่อง[Rails+Rollup+Dynamic Import]({% post_url 2021-08-18-using-importmap-on-rails-6 %}) เราก็มีการพูดถึงการใช้ **Dynamic Import** ซึ่งก็พยายามแก้ไข **Rollup** ให้สร้าง fingerprint ด้วยการเข้ารหัสผ่านอัลกอริทึม SHA256 เพื่อนำไปใช้งานใน **Rails** แทนที่ **Webpack** ให้ได้ 
 

@@ -7,9 +7,11 @@
     "@downwindcss/text-decoration": "^1.1.0",
     "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo": "^7.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
     "cssnano": "^5.0.8",
     "esbuild": "^0.13.7",
     "postcss-import": "^14.0.2",
+    "rollup": "^2.59.0",
     "terser": "^5.5.1"
   },
   "devDependencies": {
@@ -19,7 +21,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:js": "esbuild --bundle --minify javascripts/main.js --outfile=assets/javascripts/main.js"
+    "build": "rollup -c rollup.config.js",
+    "build:js": "esbuild --bundle javascripts/main.js --outfile=assets/javascripts/main.js"
   },
   "repository": {
     "url": "git+https://github.com/karn18/bookcase.git"

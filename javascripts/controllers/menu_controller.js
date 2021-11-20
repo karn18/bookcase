@@ -5,9 +5,7 @@ export default class extends Controller {
 
   connect () {
     this.isOpen = false
-    document.addEventListener("click", (event) => {
-      event.stopPropagation()
-
+    document.querySelector("body").addEventListener("click", (event) => {
       if (this.isOpen) {
         this._toggle()
       }
