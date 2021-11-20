@@ -2,14 +2,10 @@
 <html lang="en">
   {%- include head.html -%}
   <body>
-    <div class="progress"></div>
-    <header class="container mx-auto">
-      <h1>Hello</h1>
-    </header>
-    <main>
-      {%- include navbar.html -%}
+    {%- include navbar.html -%}
+    <section class="max-w-4xl mx-auto pt-4 md:pt-8 pb-8 md:pb-10 px-2 md:px-none">
       {{ content }}
-    </main>
+    </section>
     {%- include footer.html -%}
   </body>
 </html>

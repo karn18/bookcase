@@ -5070,6 +5070,14 @@ Controller.blessings = [ClassPropertiesBlessing, TargetPropertiesBlessing, Value
 Controller.targets = [];
 Controller.values = {};
 
+class LightboxController extends Controller {
+  static targets = [ 'togglable', 'panel' ]
+
+  connect () {
+    GLightbox({ selector: "img" });
+  }
+}
+
 class MenuController extends Controller {
   static targets = [ 'togglable', 'panel' ]
 
@@ -5096,4 +5104,5 @@ class MenuController extends Controller {
 
 window.Stimulus = Application.start();
 
+Stimulus.register("lightbox", LightboxController);
 Stimulus.register("menu", MenuController);

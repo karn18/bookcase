@@ -86,17 +86,17 @@
   
   blockquote:before,
   blockquote:after {
-    @apply absolute text-green-200 text-4xl md:text-9xl w-16 h-16;
+    @apply absolute text-green-200 text-6xl md:text-9xl w-16 h-16;
   }
 
   blockquote:before {
     content: '“';
-    @apply -left-10 md:-left-20 -top-12;
+    @apply -left-10 md:-left-20 -top-8 md:-top-4;
   }
   
   blockquote:after {
     content: '”';
-    @apply -right-20;
+    @apply -right-20 bottom-0 md:-bottom-4;
   }
 
   blockquote p {

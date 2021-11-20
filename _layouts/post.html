@@ -3,13 +3,15 @@ layout: home
 pagination:
   enabled: true
 ---
-{% include header.html blog=page %}
-{% if page.cover %}
-  <figure class="w-auto max-w-full my-6">
-    <img class="rounded-xl" src="{{ page.cover }}">
-  </figure>
-{% endif %}
-<section>
-  {{ content }}
-</section>
-{% include navigation.html %}
+<main data-controller="lightbox">
+  {% include header.html blog=page %}
+  {% if page.cover %}
+    <figure class="w-auto max-w-full my-6">
+      <img class="rounded-xl" src="{{ page.cover }}">
+    </figure>
+  {% endif %}
+  <div>
+    {{ content }}
+  </div>
+  {% include navigation.html %}
+</main>
