@@ -8,7 +8,7 @@ module.exports = {
     './*.html',
   ],
   // mode: 'jit',
-  darkMode: false,
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {

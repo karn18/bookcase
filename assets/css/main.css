@@ -21,7 +21,7 @@
 
 @layer base {
   body {
-    @apply text-lg md:text-2xl leading-loose;
+    @apply text-lg md:text-2xl leading-loose bg-white dark:bg-gray-800 text-black dark:text-white;
   }
 
   strong {
@@ -53,7 +53,7 @@
   }
 
   p code {
-    @apply text-lg md:text-2xl bg-red-100 rounded-full overflow-auto px-2 mb-10;
+    @apply text-lg md:text-2xl text-black bg-red-200 rounded-full overflow-auto px-2 mb-10;
   }
 
   p img {
@@ -61,7 +61,7 @@
   }
 
   p img + em {
-    @apply block text-center font-serif mx-auto text-sm text-pink-400;
+    @apply block text-center font-serif mx-auto text-sm text-gray-400;
   }
 
   ol, ul {
@@ -81,21 +81,21 @@
   }
 
   blockquote {
-    @apply mx-auto text-3xl relative max-w-xs md:max-w-xl p-2 font-serif my-12 self-center;
+    @apply mx-auto text-3xl relative md:max-w-xl p-2 font-serif my-12;
   }
   
-  blockquote:before,
-  blockquote:after {
+  blockquote::before,
+  blockquote::after {
     @apply absolute text-green-200 text-6xl md:text-9xl w-16 h-16;
   }
 
-  blockquote:before {
-    content: '“';
+  blockquote::before {
+    content: "\“";
     @apply -left-10 md:-left-20 -top-8 md:-top-4;
   }
   
-  blockquote:after {
-    content: '”';
+  blockquote::after {
+    content: "\”";
     @apply -right-20 bottom-0 md:-bottom-4;
   }
 
@@ -106,7 +106,7 @@
 
 @layer components {
   div.highlighter-rouge {
-    @apply bg-gray-100 rounded-xl p-4 mt-4 mb-10;
+    @apply bg-gray-100 rounded-xl p-4 mt-4 mb-10 text-black;
   }
 
   .highlight code {
