@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Hotwired and Line Beacon
-description: Hotwired มาใช้อัพเดตข้อมูลที่มาจาก Line Beacon มาประยุกต์ใช้กับกิจกรรม
-  Rally กันดูหน่อยว่าจะออกมาเป็นอย่างไร
+description: Hotwired มาใช้อัพเดตข้อมูลที่มาจาก Line Beacon มาประยุกต์ใช้กับกิจกรรม Rally กันดูหน่อยว่าจะออกมาเป็นอย่างไร
 author: Karn
 tags:
 - rails
@@ -10,6 +9,11 @@ tags:
 - line
 - beacon
 categories: dev
+cover: "/assets/images/posts/2021/hotwired-and-line-beacon/cover.png"
+image:
+  path: "/assets/images/posts/2021/hotwired-and-line-beacon/cover.png"
+  width: 1200
+  height: 800
 date: 2021-12-01 15:05 +0700
 ---
 ช่วงนี้ใกล้จะเทศกาลคริสมาสต์แล้วก็จะมีการเปิดกล่องของขวัญกัน ดังนั้นในบทความนี้เราจะมาลองพัฒนา**แคมเปญเปิดกล่องของขวัญวันคริสมาสต์** โดยใช้ **Hotwired** และ **Line Beacon** กัน ทั้งนี้เพื่อเพิ่มความน่าสนใจในการเข้าถึงลูกค้าผ่าน **Line OA**
@@ -64,6 +68,12 @@ end
   </video>
 </div>
 {% endraw %}
+
+![](/assets/images/posts/2021/hotwired-and-line-beacon/screenshot_1.png){:width="600px"}
+*Alpha*
+
+![](/assets/images/posts/2021/hotwired-and-line-beacon/screenshot_2.png){:width="600px"}
+*Unbox with Line LIFF*
 
 ## References
 - [Hotwired](https://hotwired.dev/)

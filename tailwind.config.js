@@ -1,13 +1,16 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [
-    './_includes/**/*.html',
-    './_layouts/**/*.html',
-    './_posts/*.md',
-    './*.html',
-  ],
-  // mode: 'jit',
+  purge: {
+    layers: ['base', 'components', 'utilities'],
+    content: [
+      './_includes/**/*.html',
+      './_layouts/**/*.html',
+      './_posts/*.md',
+      './*.html'
+    ]
+  },
+  mode: 'jit',
   darkMode: 'class',
   theme: {
     extend: {
@@ -48,7 +51,6 @@ module.exports = {
           '2xl': '1240px',
         }
       },
-      // textDecoration: ['active', 'wavy'],
       inset: {
         '17': '4.25rem',
         '18': '4.5rem',
