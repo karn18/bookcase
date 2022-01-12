@@ -7,7 +7,7 @@ tags:
   - faynman
   - learning
   - teaching
-categories: fod
+categories: dev
 cover: "/assets/images/posts/2020/favorite-of-the-day-2/cover.jpg"
 image:
   path: "/assets/images/posts/2020/favorite-of-the-day-2/cover.jpg"

@@ -1,16 +1,12 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: {
-    layers: ['base', 'components', 'utilities'],
-    content: [
-      './_includes/**/*.html',
-      './_layouts/**/*.html',
-      './_posts/*.md',
-      './*.html'
-    ]
-  },
-  mode: 'jit',
+  content: [
+    './_includes/**/*.html',
+    './_layouts/**/*.html',
+    './_posts/*.md',
+    './*.html'
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -31,8 +27,8 @@ module.exports = {
         '7xl': '5rem',
       },
       fontFamily: {
-        sans: [ "Bai Jamjuree" ],
-        serif: [ "Prompt" ],
+        sans: [ "IBM Plex Sans Thai Looped" ],
+        serif: [ "IBM Plex Sans Thai" ],
         mono: [ "JetBrainsMono" ]
       },
       container: {

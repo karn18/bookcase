@@ -9,12 +9,6 @@
   .wavy {
     text-decoration-style: wavy;
   }
-
-  @variants hover, focus {
-    .wavy {
-      text-decoration-style: wavy;
-    }
-  }
 }
 
 @layer base {
@@ -35,7 +29,15 @@
   }
 
   h2 {
-    @apply text-green-300 text-2xl mt-8;
+    @apply text-green-400 text-2xl mt-8;
+  }
+
+  h3 {
+    @apply text-purple-400 mt-8;
+  }
+
+  hr {
+    @apply mx-auto w-1/3 py-10 border-0 border-t-4 border-gray-300 mt-12;
   }
 
   a {
@@ -83,15 +85,15 @@
   }
 
   blockquote {
-    @apply mx-auto text-3xl relative md:max-w-xl p-2 font-serif my-12;
+    @apply mx-auto text-3xl relative md:max-w-xl p-6 font-serif my-12 border-t-4 border-green-400 bg-green-50 rounded-b-3xl;
   }
   
-  blockquote::before,
+  /* blockquote::before,
   blockquote::after {
     @apply absolute text-green-200 text-6xl md:text-9xl w-16 h-16;
-  }
+  } */
 
-  blockquote::before {
+  /* blockquote::before {
     content: "\“";
     @apply -left-10 md:-left-20 -top-8 md:-top-4;
   }
@@ -99,11 +101,35 @@
   blockquote::after {
     content: "\”";
     @apply -right-20 bottom-0 md:-bottom-4;
-  }
+  } */
 
   blockquote p {
     @apply my-0;
   }
+}
+
+code.language-plaintext {
+  @apply text-lg md:text-2xl text-black bg-red-200 rounded-full overflow-auto px-2 mb-10;
+}
+
+h1 a, h2 a, h3 a {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+  @apply no-underline;
+}
+
+h1 a::before, h2 a::before, h3 a::before {
+  content: "#";
+  @apply -ml-6 pr-2 opacity-0;
+}
+
+h1 a:hover::before, h2 a:hover::before, h3 a:hover::before {
+  content: "#";
+  @apply -ml-6 pr-2 opacity-100;
 }
 
 .turbo-progress-bar {

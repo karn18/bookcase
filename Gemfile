@@ -11,11 +11,12 @@ ruby File.read(File.join(File.dirname(__FILE__), ".ruby-version")).strip
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.2.0"
-gem 'jekyll-archives'
+# gem 'jekyll-archives'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'liquid_pluralize'
 gem 'rake'
+gem 'webrick'
 # gem 'liquid_reading_time', git: 'https://github.com/karn18/reading_time.git'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.

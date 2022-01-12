@@ -21,6 +21,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "",
     "build": "rollup -c rollup.config.js",
     "build:js": "esbuild --bundle javascripts/main.js --outfile=assets/javascripts/main.js"
   },

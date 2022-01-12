@@ -20,8 +20,8 @@
 
 title: Karn
 email: karn@hey.com
-description: Love and enjoy coding with Ruby 
-keywords: ruby rails javascript technology
+description: Love and enjoy coding with Ruby at Phuket
+keywords: ruby rails javascript development phuket
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://karn18.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
@@ -39,7 +39,7 @@ sass:
   ]
 
 plugins:
-  - jekyll-archives
+  # - jekyll-archives
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-sitemap
@@ -78,16 +78,22 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
-jekyll-archives:
-  enabled: 
-    - year
-    - tags
-  layouts: 
-    year: year-archive
-    tag: tag-archive
-  permalinks:
-    year: '/archives/:year/'
-    month: '/archives/:year/:month/'
-    day: '/archives/:year/:month/:day/'
-    tag: '/archives/tag/:name/'
-    category: '/archives/category/:name/'
+# autopages:
+#   enabled: true
+#   categories:
+#     layouts:
+#       - autopage_cat.html
+#     enabled: true
+# jekyll-archives:
+#   enabled: 
+#     - year
+#     - tags
+#   layouts: 
+#     year: year-archive
+#     tag: tag-archive
+#   permalinks:
+#     year: '/archives/:year/'
+#     month: '/archives/:year/:month/'
+#     day: '/archives/:year/:month/:day/'
+#     tag: '/archives/tag/:name/'
+#     category: '/archives/category/:name/'

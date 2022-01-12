@@ -4961,9 +4961,43 @@
   };
   __publicField(theme_controller_default, "targets", ["icon"]);
 
+  // javascripts/controllers/anchor_controller.js
+  var anchor_controller_default = class extends Controller {
+    connect() {
+      const headings = document.querySelectorAll(this.constructor.headings.join(","));
+      const anchorLinkClass = this.hasAnchorLinkClass ? this.anchorLinkClass : "anchor-link";
+      headings.forEach((heading) => {
+        const rawStr = this.removeTags(heading.innerHTML);
+        const id = this.slugify(rawStr);
+        if (this.idEnabledValue) {
+          heading.id = id;
+        }
+        heading.innerHTML = `<a href="#${id}" class="${anchorLinkClass}">${rawStr}</a>`;
+      });
+      document.addEventListener("turbo:click", (event) => {
+        if (event.detail.url.includes("#")) {
+          return event.preventDefault();
+        }
+      });
+    }
+    slugify(text) {
+      return text.replace(/^\s+|\s+$/g, "").replace(/\s+/g, "-").replace(/-+/g, "-").replace(/\&amp;/g, "-").toLowerCase();
+    }
+    removeTags(text) {
+      if (text === null || text === "")
+        return false;
+      text = text.toString();
+      return text.replace(/(<([^>]+)>)/ig, "");
+    }
+  };
+  __publicField(anchor_controller_default, "headings", ["h1", "h2", "h3"]);
+  __publicField(anchor_controller_default, "values", { idEnabled: Boolean });
+  __publicField(anchor_controller_default, "classes", ["anchorLink"]);
+
   // javascripts/controllers/index.js
   window.Stimulus = Application.start();
   Stimulus.register("lightbox", lightbox_controller_default);
   Stimulus.register("menu", menu_controller_default);
   Stimulus.register("theme", theme_controller_default);
+  Stimulus.register("anchor", anchor_controller_default);
 })();
