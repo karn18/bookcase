@@ -1,25 +1,15 @@
 ---
 layout: home
-pagination:
-  enabled: true
 ---
-<section class="home-box">
-  <div class="home-box__room">
-    <h1>Archive of posts from {{ page.date | date: "%Y" }}</h1>
-    <div>{{ page.path }}x</div>
-    <div>{{ page.name }}x</div>
-    {% if page.year %}
-
-    {% endif %}
-    <ul>
-      {% for post in page.posts %}
-        <li class="blog-item">
-          <a class="blog-item__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <div class="blog-item__info">
-            <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+<section class="container">
+  <h1>Archives</h1>
+  
+  <ul>
+    <li class="blog-item">
+      <a class="blog-item__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="blog-item__info">
+        <i class="typcn typcn-calendar-outline"></i> {{ post.date | date: "%d-%m-%Y" }}
+      </div>
+    </li>
+  </ul>
 </section>
