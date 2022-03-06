@@ -143,11 +143,9 @@ date: 2021-02-18 12:10 +0700
 ผลลัพท์ที่ได้ก็จะประมาณนี้
 
 {% raw %}
-<div class="video">
-  <video controls playsinline>
-    <source src="/assets/videos/stimulus_turbo.mov" type="video/mp4">
-  </video>
-</div>
+<video controls playsinline>
+  <source src="/assets/videos/stimulus_turbo.mov" type="video/mp4">
+</video>
 {% endraw %}
 
 ## References

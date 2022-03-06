@@ -62,11 +62,9 @@ end
 ## ผลลัพท์การพัฒนา
 
 {% raw %}
-<div class="my-8">
-  <video controls playsinline>
-    <source src="/assets/videos/hotwired_and_line_beacon.mov" type="video/mp4">
-  </video>
-</div>
+<video controls playsinline>
+  <source src="/assets/videos/hotwired_and_line_beacon.mov" type="video/mp4">
+</video>
 {% endraw %}
 
 ![](/assets/images/posts/2021/hotwired-and-line-beacon/screenshot_1.png){:width="600px"}

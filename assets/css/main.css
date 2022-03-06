@@ -5,12 +5,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@layer utilities {
-  .wavy {
-    text-decoration-style: wavy;
-  }
-}
-
 @layer base {
   body {
     @apply text-lg md:text-2xl leading-loose bg-white dark:bg-gray-800 text-black dark:text-white;
@@ -20,28 +14,40 @@
     @apply font-bold;  
   }
 
-  h1, h2, h3 {
-    @apply font-serif font-bold;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold mt-8 mb-2;
   }
 
   h1 {
-    @apply text-pink-400 text-3xl mt-12;
+    @apply text-3xl md:text-5xl leading-loose;
   }
 
   h2 {
-    @apply text-green-400 text-2xl mt-8;
+    @apply text-2xl md:text-3xl leading-relaxed;
   }
 
   h3 {
-    @apply text-purple-400 mt-8;
+    @apply text-base md:text-xl leading-normal;
+  }
+
+  h4 {
+    @apply text-base md:text-lg leading-normal;
+  }
+
+  h5 {
+    @apply text-gray-900 text-base md:text-lg tracking-normal;
   }
 
   hr {
     @apply mx-auto w-1/3 py-10 border-0 border-t-4 border-gray-300 mt-12;
   }
 
+  /* article {
+    @apply py-4;
+  } */
+
   a {
-    @apply text-lg md:text-2xl text-orange-400 no-underline wavy hover:underline hover:wavy;
+    @apply text-black dark:text-white text-lg md:text-2xl no-underline hover:no-underline border-b-2 border-purple-500;
   }
 
   p {
@@ -76,35 +82,120 @@
     @apply list-disc;
   }
 
-  ul li:last-child, ol li:last-child {
-    @apply mb-6;
+  img {
+    @apply rounded-xl my-4;
   }
 
   figure, img, video {
-    @apply max-w-full text-center;
+    @apply max-w-full text-center my-8;
+  }
+
+  article figure {
+    @apply w-auto max-w-full;
   }
 
   blockquote {
-    @apply mx-auto text-3xl relative md:max-w-xl p-6 font-serif my-12 border-t-4 border-green-400 bg-green-50 rounded-b-3xl;
+    @apply mx-auto text-3xl relative md:max-w-xl p-6 font-serif my-12 border-t-4 border-green-400 bg-green-100 rounded-b-3xl text-black;
   }
-  
-  /* blockquote::before,
-  blockquote::after {
-    @apply absolute text-green-200 text-6xl md:text-9xl w-16 h-16;
-  } */
-
-  /* blockquote::before {
-    content: "\“";
-    @apply -left-10 md:-left-20 -top-8 md:-top-4;
-  }
-  
-  blockquote::after {
-    content: "\”";
-    @apply -right-20 bottom-0 md:-bottom-4;
-  } */
 
   blockquote p {
     @apply my-0;
+  }
+
+  dl {
+    @apply py-1;
+  }
+
+  dt {
+    @apply sr-only;
+  }
+
+  dd {
+    @apply text-base leading-6 font-medium text-gray-500;
+  }
+  
+  dd ul {
+    @apply list-none flex flex-row justify-center content-center items-center mx-auto;
+  }
+
+  dd li {
+    @apply mx-2 text-xs inline-flex items-center font-bold uppercase px-3 py-1 bg-green-200 text-green-700 rounded-full;
+  }
+
+  footer {
+    @apply text-center px-4 py-10 md:py-12 bottom-0 mx-auto;
+  }
+
+  footer a {
+    @apply rounded-full bg-purple-600 py-2 px-4 mb-8 mx-auto text-white border-b-0 no-underline hover:no-underline leading-8 flex w-fit;
+  }
+
+  footer div {
+    @apply flex text-center items-center justify-center hover:text-pink-600;
+  }
+
+  footer span {
+    @apply flex text-center items-center text-white;
+  }
+
+  time {
+    @apply text-sm text-gray-600;
+  }
+
+  header {
+    @apply py-4 md:py-6 mx-auto text-center;
+  }
+
+  main {
+    @apply w-full md:w-2/4 mx-auto;
+  }
+
+  nav {
+    @apply flex w-full md:w-2/4 mx-auto py-6 px-4 bg-white dark:bg-gray-800 text-black dark:text-white;
+  }
+
+  nav ul {
+    @apply list-none flex flex-row content-center items-center mx-auto;
+  }
+
+  nav li {
+    @apply mx-4;
+  }
+
+  nav > a, nav > button {
+    @apply flex items-center text-gray-800 hover:text-purple-600 dark:text-white dark:hover:text-purple-600 no-underline;
+  }
+
+  nav button {
+    display: inherit;
+  }
+
+  nav figure {
+    /* @apply my-auto; */
+  }
+
+  svg {
+    @apply align-middle;
+  }
+
+  section {
+    @apply mx-auto px-4;
+  }
+
+  .navigation {
+    @apply flex mt-10;
+  }
+
+  .navigation--previous {
+    @apply mr-auto;
+  }
+
+  .navigation--next {
+    @apply ml-auto;
+  }
+
+  .navigation a {
+    @apply border-b-0 rounded-full bg-purple-600 py-2 px-4 text-white border-b-0 no-underline hover:no-underline leading-8;
   }
 }
 
@@ -116,6 +207,7 @@ h1 a, h2 a, h3 a {
   color: inherit;
   text-decoration: inherit;
   font-size: inherit;
+  @apply border-b-0;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover {
@@ -138,7 +230,8 @@ h1 a:hover::before, h2 a:hover::before, h3 a:hover::before {
 }
 
 div.highlighter-rouge {
-  @apply bg-gray-100 rounded-xl p-4 mt-4 mb-10 text-black;
+  @apply bg-purple-50 p-4 mt-4 mb-10 text-black border-t-4 border-purple-500 rounded-b-3xl;
+  /* @apply mx-auto text-3xl relative md:max-w-xl p-6 font-serif my-12 border-t-4 border-green-400 bg-green-50 rounded-b-3xl; */
 }
 
 .highlight code {
@@ -150,13 +243,13 @@ div.highlighter-rouge {
 .lineno::selection { background-color: transparent; } /* Other major browsers */
 
 .highlight pre {
-  @apply bg-gray-100 rounded-xl overflow-auto;
+  @apply bg-purple-50 rounded-xl overflow-auto px-2;
 }
 
 /* .highlight .hll { background-color: #49483e } */
 .highlight .c { @apply text-gray-400; } /* Comment */
 .highlight .err { @apply text-red-900; } /* Error */
-.highlight .k { @apply text-green-400; } /* Keyword */
+.highlight .k { @apply text-emerald-600; } /* Keyword */
 .highlight .l { @apply text-pink-600; } /* Literal */
 /* .highlight .n { color: #f8f8f2 } Name */
 /* .highlight .o { color: #f92672 } Operator */
@@ -169,7 +262,7 @@ div.highlighter-rouge {
 .highlight .cs { @apply text-gray-400; } /* Comment.Special */
 .highlight .gd { @apply text-red-900; } /* Generic.Deleted */
 .highlight .ge { @apply italic; } /* Generic.Emph */
-.highlight .gi { @apply text-green-400; } /* Generic.Inserted */
+.highlight .gi { @apply text-emerald-600; } /* Generic.Inserted */
 .highlight .gs { @apply font-bold; } /* Generic.Strong */
 .highlight .gu { @apply text-orange-400; } /* Generic.Subheading */
 .highlight .kc { @apply text-orange-400; } /* Keyword.Constant */
@@ -178,9 +271,9 @@ div.highlighter-rouge {
 .highlight .kp { @apply text-orange-400; } /* Keyword.Pseudo */
 .highlight .kr { @apply text-orange-400; } /* Keyword.Reserved */
 .highlight .kt { @apply text-orange-400; } /* Keyword.Type */
-.highlight .ld { @apply text-green-400; } /* Literal.Date */
+.highlight .ld { @apply text-emerald-600; } /* Literal.Date */
 .highlight .m { @apply text-pink-600; } /* Literal.Number */
-.highlight .s { @apply text-green-400; } /* Literal.String */
+.highlight .s { @apply text-emerald-600; } /* Literal.String */
 /* .highlight .na { color: #a6e22e } Name.Attribute */
 /* .highlight .nb { @apply text-black; } Name.Builtin */
 /* .highlight .nc { color: #a6e22e } Name.Class */

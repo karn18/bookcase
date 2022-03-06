@@ -63,9 +63,7 @@ date: 2021-08-15 19:11 +0700
 ผลลัพท์ที่ได้ก็จะประมาณนี้
 
 {% raw %}
-<div class="video">
-  <video controls playsinline>
-    <source src="/assets/videos/multi_files_uploader.mov" type="video/mp4">
-  </video>
-</div>
+<video controls playsinline>
+  <source src="/assets/videos/multi_files_uploader.mov" type="video/mp4">
+</video>
 {% endraw %}

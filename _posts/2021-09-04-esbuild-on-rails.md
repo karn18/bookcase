@@ -79,11 +79,9 @@ date: 2021-09-04 11:09 +0700
 - เปิดเว็บขึ้นมาทดสอบ
 
 {% raw %}
-<div class="video">
-  <video controls playsinline>
-    <source src="/assets/videos/esbuild_confetti.mov" type="video/mp4">
-  </video>
-</div>
+<video controls playsinline>
+  <source src="/assets/videos/esbuild_confetti.mov" type="video/mp4">
+</video>
 {% endraw %}
 
 มาลองเปรียบเทียบระหว่าง **Webpack** และ **esbuild** กันแบบคร่าวๆ หลังจากผ่าน precompile

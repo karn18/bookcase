@@ -13,8 +13,8 @@ categories: tech
 
 เพื่อให้มั่นใจว่าอีเมลล์ของนักเรียนที่ส่งการบ้านมานั้นถูกส่งเข้ามายัง **Imbox** ของเราทันที โดยไม่ต้อง **Screening** ทั้งนี้ฟีเจอร์ **Speakeasy Code** เปรียบเหมือน **Easy Pass** ที่ถูกสุ่มขึ้นมา และนำไปใส่ในหัวข้ออีเมลล์
 
-![Speakeasy Code](/assets/images/posts/2020/hey-เรามาแล้ว-part-2/speakeasy_code.png){:width="400px"}
-*Speakeasy Code*
+![Speakeasy Code](/assets/images/posts/2020/hey-เรามาแล้ว-part-2/solargraph-extension.png){:width="400px"}
+*Solargraph Extension in VSCode*
 
 
 

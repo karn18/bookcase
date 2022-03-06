@@ -1,12 +1,12 @@
-<div class="flex mt-4">
-  <div class="mr-auto">
+<div class="navigation">
+  <div class="navigation--previous">
     {% if page.next.url %}
-      <a class="rounded-full bg-purple-600 py-2 px-4 text-white no-underline leading-8" href="{{ page.next.url | uri_escape }}">&larr; Newer</a>
+      <a href="{{ page.next.url | uri_escape }}">&larr; Newer</a>
     {% endif %}
   </div>
-  <div class="ml-auto">
+  <div class="navigation--next">
     {% if page.previous.url %}
-      <a class="rounded-full bg-purple-600 py-2 px-4 text-white no-underline leading-8" href="{{ page.previous.url | uri_escape }}">Older &rarr;</a>
+      <a href="{{ page.previous.url | uri_escape }}">Older &rarr;</a>
     {% endif %}
   </div>
 </div>

@@ -20,11 +20,9 @@ date: 2020-12-28 11:14 +0700
 สามารถเข้าไปศึกษาวิธีการใช้ **Turbo** ได้จาก[ที่นี่](https://turbo.hotwire.dev) หรือจะดูจากวิดีโอด้านล่างก็ได้นะครับ
 
 {% raw %}
-<div class="video">
-  <video controls playsinline>
-    <source src="https://s3.amazonaws.com/hotwire.dev/hotwire-screencast.mp4" type="video/mp4">
-  </video>
-</div>
+<video controls playsinline>
+  <source src="https://s3.amazonaws.com/hotwire.dev/hotwire-screencast.mp4" type="video/mp4">
+</video>
 {% endraw %}
 
 ---
@@ -216,11 +214,9 @@ date: 2020-12-28 11:14 +0700
 เพียงเท่านี้เราก็จะได้แอพ ​TODO ที่พร้อมใช้งานดังแสดงในวิดีโอด้านล่าง
 
 {% raw %}
-<div class="video">
-  <video controls playsinline>
-    <source src="/assets/videos/awesome_todo.mov" type="video/mp4">
-  </video>
-</div>
+<video controls playsinline>
+  <source src="/assets/videos/awesome_todo.mov" type="video/mp4">
+</video>
 {% endraw %}
 
 ## References
