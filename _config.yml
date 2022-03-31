@@ -18,14 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Karn
+title: Karn's Blog
+author: Karn
 email: karn@hey.com
 description: Love and enjoy coding with Ruby at Phuket
 keywords: ruby rails javascript development phuket
+image: https://surfup.karn.work/covers/835ddb9c80/8e27f55e7b.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://karn18.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
   username: karn18
+  card: summary
 social:
   name: Karn Tirasoontorn
   links:

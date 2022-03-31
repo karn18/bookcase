@@ -23,3 +23,4 @@ date: 2022-01-04 21:21 +0700
 2. [Sprockets Rails กับฟ้อนต์ที่ไม่โหลด]({% post_url 2022-01-16-sprockets-rails-กับฟ้อนต์ที่ไม่โหลด %})
 3. [Zeitwerk กับการตั้งชื่อคลาสที่ไม่ตรงกับเงื่อนไข]({% post_url 2022-02-02-zeitwerk-กับการตั้งชื่อคลาสที่ไม่ตรงกับเงื่อนไข %})
 4. [Solargraph not working in VSCode]({% post_url 2022-03-05-solargraph-not-working-in-vscode %})
+5. [How to use pnpm instead of yarn to compile assets on Rails]({% post_url 2022-03-29-how-to-use-pnpm-instead-of-yarn-to-compile-assets-on-rails %})

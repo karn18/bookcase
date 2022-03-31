@@ -10,9 +10,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        orange: colors.orange
-      },
       fontSize: {
         'xs': '.75rem',
         'sm': '.875rem',
