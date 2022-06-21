@@ -7,6 +7,8 @@ tags:
 - LFP
 categories: dev
 cover: "/assets/images/posts/2022/learning-from-problems/cover.png"
+twitter:
+  card: summary_large_image
 image:
   path: "/assets/images/posts/2022/learning-from-problems/cover.png"
   width: 1200
@@ -24,3 +26,4 @@ date: 2022-01-04 21:21 +0700
 3. [Zeitwerk กับการตั้งชื่อคลาสที่ไม่ตรงกับเงื่อนไข]({% post_url 2022-02-02-zeitwerk-กับการตั้งชื่อคลาสที่ไม่ตรงกับเงื่อนไข %})
 4. [Solargraph not working in VSCode]({% post_url 2022-03-05-solargraph-not-working-in-vscode %})
 5. [How to use pnpm instead of yarn to compile assets on Rails]({% post_url 2022-03-29-how-to-use-pnpm-instead-of-yarn-to-compile-assets-on-rails %})
+6. [Surf Up! เวอร์ชันวุ้น]({% post_url 2022-04-02-surf-up-เวอร์ชันวุ้น %})

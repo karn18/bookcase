@@ -10,6 +10,8 @@ tags:
 - jsbundling
 - LFP
 categories: dev
+twitter:
+  card: summary_large_image
 image:
   path: https://surfup.karn.work/covers/835ddb9c80/2e86cd28aa.png
   width: 1200

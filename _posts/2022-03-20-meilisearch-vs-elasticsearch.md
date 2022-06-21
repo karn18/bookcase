@@ -12,6 +12,8 @@ tags:
 - elasticsearch
 - meilisearch
 categories: dev
+twitter:
+  card: summary_large_image
 image:
   path: "/assets/images/posts/2022/meilisearch-vs-elasticsearch/cover.png"
   width: 1200

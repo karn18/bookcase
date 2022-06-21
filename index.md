@@ -1,5 +1,6 @@
 ---
 layout: home
+image: https://surfup.karn.work/covers/835ddb9c80/8e27f55e7b.png
 pagination:
   enabled: true
 ---
